@@ -12,3 +12,6 @@
 /permissions.yml
 /usercache.json
 /whitelist.json
+
+# Usage files
+/backups

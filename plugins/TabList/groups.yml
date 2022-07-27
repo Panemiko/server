@@ -1,0 +1,14 @@
+# This global group will be applied to all players
+globalGroup:
+  prefix: ''
+  tabname: ''
+  suffix: ''
+
+groups:
+  # Vault group name OR player name OR custom group name (custom is assigned via permission)
+  exampleGroup:
+    prefix: '&a[&cStaff&a]&6 '
+    tabname: '%player-displayname%'
+    suffix: '&7 <12>'
+  # permission: tablist.staff
+  
