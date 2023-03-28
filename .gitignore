@@ -1,17 +1,6 @@
-# Cache files
+# Temporary files
 /cache
 /libraries
-/logs
-/versions
-/version_history.json
 
-# Players files
-/banned-ips.json
-/banned-players.json
-/ops.json
-/permissions.yml
-/usercache.json
-/whitelist.json
-
-# Usage files
-/backups
+# Paper zone
+*.Zone.Identifier
