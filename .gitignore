@@ -1,19 +1,18 @@
-# Paper files
+# Temporary files
 /cache
 /libraries
 /versions
 
-# Paper zone
-*:Zone.Identifier
-
 # Usage files
 /logs
-/eula.txt
-/world*
-
+/.console_history
 /banned-ips.json
 /banned-players.json
+/eula.txt
 /ops.json
 /usercache.json
 /version_history.json
 /whitelist.json
+
+# World folders
+/world*
