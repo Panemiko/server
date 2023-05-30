@@ -1,0 +1,10 @@
+messages:
+  prefix: '&6ArmedArmorstands &8» &7'
+  no-permission: '&cYou''re not allowed to use this feature!'
+permission:
+  permission: armorstand.arm
+  required: true
+  send-message: true
+settings:
+  consume-sticks: true
+  drop-sticks: true

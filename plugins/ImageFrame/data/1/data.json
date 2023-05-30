@@ -1,0 +1,58 @@
+{
+  "type": "com.loohp.imageframe.objectholders.URLStaticImageMap",
+  "index": 1,
+  "name": "aa",
+  "url": "https://cdn.discordapp.com/attachments/755266466953035867/1112849469948571648/image.png",
+  "width": 3,
+  "height": 3,
+  "creator": "e15cb7d5-0709-38ba-8d66-91e186774659",
+  "hasAccess": {},
+  "creationTime": 1685486572528,
+  "mapdata": [
+    {
+      "mapid": 43,
+      "image": "0.png",
+      "markers": []
+    },
+    {
+      "mapid": 44,
+      "image": "1.png",
+      "markers": []
+    },
+    {
+      "mapid": 45,
+      "image": "2.png",
+      "markers": []
+    },
+    {
+      "mapid": 46,
+      "image": "3.png",
+      "markers": []
+    },
+    {
+      "mapid": 47,
+      "image": "4.png",
+      "markers": []
+    },
+    {
+      "mapid": 48,
+      "image": "5.png",
+      "markers": []
+    },
+    {
+      "mapid": 49,
+      "image": "6.png",
+      "markers": []
+    },
+    {
+      "mapid": 50,
+      "image": "7.png",
+      "markers": []
+    },
+    {
+      "mapid": 51,
+      "image": "8.png",
+      "markers": []
+    }
+  ]
+}
