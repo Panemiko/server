@@ -7,7 +7,7 @@ settings:
   connection-throttle: 4000
   query-plugins: true
   deprecated-verbose: default
-  shutdown-message: Server closed
+  shutdown-message: Servidor fechado
   minimum-api: none
   use-map-color-cache: true
 spawn-limits:
@@ -33,7 +33,3 @@ aliases: now-in-commands.yml
 worlds:
   world:
     generator: Terra:OVERWORLD
-  world_nether:
-    generator: Terra:NETHER
-  world_the_end:
-    generator: Terra:END

@@ -34,11 +34,11 @@ settings:
   log-named-deaths: true
 messages:
   whitelist: You are not whitelisted on this server!
-  unknown-command: Unknown command. Type "/help" for help.
-  server-full: The server is full!
-  outdated-client: Outdated client! Please use {0}
-  outdated-server: Outdated server! I'm still on {0}
-  restart: Server is restarting
+  unknown-command: Comando desconhecido
+  server-full: O servidor está cheio
+  outdated-client: Cliente desatualizado. Use a {0}
+  outdated-server: Servidor desatualizado. Use a {0}
+  restart: O servidor está sendo reiniciado
 advancements:
   disable-saving: false
   disabled:
