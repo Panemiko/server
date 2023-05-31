@@ -1,64 +1,64 @@
 Messages:
   Reloaded: '&eImageFrame has been reloaded!'
-  ImageMapCreated: '&aImageMap has been created!'
+  ImageMapCreated: '&aImagem criada'
   ImageMapRefreshed: '&aImageMap has been refreshed!'
-  ImageMapDeleted: '&eImageMap had been deleted!'
-  ImageMapRenamed: '&aImageMap had been renamed!'
-  SetCreator: '&aImageMap creator of id {ImageID} set to {CreatorName} ({CreatorUUID})'
-  InvalidOverlayMap: '&cOverlay only works on Vanilla Minecraft maps and without duplicates in selection!'
-  UnableToLoadMap: '&cImageMap cannot be loaded, there is a problem while reading the image.'
-  UnknownError: '&cAn unknown error had occurred.'
-  ImageOverMaxFileSize: '&cImageMap cannot be loaded as it is over the max file size allowed. ({Size} bytes)'
-  NotAnImageMap: '&cThat is not an ImageMap'
+  ImageMapDeleted: '&eImagem removida'
+  ImageMapRenamed: '&aImagem renomeada'
+  SetCreator: '&aCriador da imagem {ImageID} definida para {CreatorName} ({CreatorUUID})'
+  InvalidOverlayMap: '&cSobreposição somente funciona com mapas Vanilla sem cópias'
+  UnableToLoadMap: '&cNão foi possível carregar a imagem'
+  UnknownError: '&cUm erro desconhecido ocorreu.'
+  ImageOverMaxFileSize: '&cA imagem excede o tamanho máximo da imagem ({Size} bytes)'
+  NotAnImageMap: '&cIsso não é uma imagem'
   URLImageMapInfo:
-    - '&bImageID: {ImageID}'
-    - '&aName: {Name}'
-    - '&eMap Size: {Width} x {Height}'
-    - '&dCreator: {CreatorName} ({CreatorUUID})'
-    - '&fAccess: {Access}'
-    - '&aTime Created: {TimeCreated}'
-    - '&bMarkers: {Markers}'
+    - '&bID: {ImageID}'
+    - '&aNome: {Name}'
+    - '&eResolução: {Width}x{Height}'
+    - '&dCriador: {CreatorName} ({CreatorUUID})'
+    - '&fAcesso: {Access}'
+    - '&aCriado em: {TimeCreated}'
+    - '&bMarcadores: {Markers}'
     - '&eURL: {URL}'
-  NoPermission: '&cYou do not have permission to do that!'
+  NoPermission: '&cVocê não tem permissão para fazer isso'
   NoConsole: '&cThis command can only be ran by players!'
-  PlayerNotFound: '&cThis player cannot be found!'
-  InvalidUsage: '&cInvalid Usage!'
-  NotEnoughMaps: '&cYou do not have {Amount} maps!'
-  Oversize: '&cThat is too big! Max size for a map is {MaxSize}'
-  URLRestricted: '&cThat URL is restricted and cannot be used to create image maps.'
-  PlayerCreationLimitReached: '&cYou can only create <Limit> maps at once! Delete some to create new ones'
-  DuplicateMapName: '&cYou''ve already created an image map with that name!'
-  MapLookup: '&bList of image maps by {CreatorName} ({CreatorUUID}):'
-  ItemFrameOccupied: '&cFailed to place or remove some maps on selected ItemFrame, they are either destroyed, replaced, occupied or protected.'
-  NotEnoughSpace: '&cUnable to place Combined ImageMap as there is not enough room.'
+  PlayerNotFound: '&cJogador não encontrado'
+  InvalidUsage: '&cUsagem inválida'
+  NotEnoughMaps: '&cVocê não tem os mapas necessários ({Amount})'
+  Oversize: '&cMuito grande, tamanho máximo: {MaxSize}'
+  URLRestricted: '&cEsse URL já foi registrado e não pode ser usado'
+  PlayerCreationLimitReached: '&cVocê só pode criar <Limit> imagens de uma vez. Remova alguns para continuar'
+  DuplicateMapName: '&cVocê já criou uma imagem com esse nome'
+  MapLookup: '&bLista de mapas {CreatorName} ({CreatorUUID}):'
+  ItemFrameOccupied: '&cFalha ao realizar a operação'
+  NotEnoughSpace: '&cSem espaço suficiente'
   AccessPermission:
-    Updated: '&aUpdated access for {PlayerName} ({PlayerUUID}), they now have {Permission} permission.'
+    Updated: '&aPermissão atualizada {PlayerName}, agora ele tem a permissão {Permission}.'
     Types:
-      NONE: NONE
-      GET: GET
-      MARKER: MARKER
-      EDIT: EDIT
-      EDIT_CLONE: EDIT WITH CLONE
-      ALL: ALL
+      NONE: Nenhum
+      GET: Pegar
+      MARKER: Marcar
+      EDIT: Editar
+      EDIT_CLONE: Editar clone
+      ALL: Todas
   Selection:
-    Begin: '&bRight click an Item Frame to select corner 1 and 2'
-    Clear: '&eLeaving selection mode'
-    Corner1: '&aSelected Item Frame corner 1'
-    Corner2: '&aSelected Item Frame corner 2'
-    Invalid: '&cInvalid selection!'
-    Oversize: '&cOversize selection! Max size for a map is {MaxSize}'
-    Success: '&aSelected {Width} x {Height} Item Frames! &eIf any of them are removed/replaced, you will need to select them again.'
-    NoSelection: '&cYou don''t have a valid selection yet.'
-    IncorrectSize: '&cYour selection''s size does not match, {Width} x {Height} required.'
+    Begin: '&bClique direito em um item frame para selecionar o canto 1 e 2'
+    Clear: '&eSaindo do modo de seleção'
+    Corner1: '&aSelecionado canto 1'
+    Corner2: '&aSelecionado canto 2'
+    Invalid: '&cSeleção inválida'
+    Oversize: '&cSeleção muito grande! Tamanho máximo é {MaxSize}'
+    Success: '&aSelecionado {Width}x{Height} items frames'
+    NoSelection: '&cVocê não tem uma seleção válida.'
+    IncorrectSize: '&cO tamanho da sua seleção não encaixa: {Width} x {Height}'
   Markers:
-    AddBegin: '&aRight click on an Item Frame containing the map "{Name}" to place marker! &bRun "/imageframe marker cancel" to cancel placement'
-    AddConfirm: '&aMarker placed!'
-    Remove: '&eMarker removed!'
-    Clear: '&eMarkers cleared!'
-    Cancel: '&eMarker placement cancelled!'
-    DuplicateName: '&cThere is already a marker with that name!'
-    NotAMarker: '&cThat is not a valid marker'
-    NotRenderOnFrameWarning: '&eWarning: This marker type does not render on Item Frames!'
+    AddBegin: '&aClique direito em um item frame contendo o mapa "{Name}" para inserir um marcador ("/imageframe marker cancel" para cancelar)'
+    AddConfirm: '&aMarcador inserido'
+    Remove: '&eMarcador removido'
+    Clear: '&eMarcador limpo'
+    Cancel: '&eMarcador cancelado!'
+    DuplicateName: '&cJá tem um marcador com esse nome!'
+    NotAMarker: '&cMarcador não válido'
+    NotRenderOnFrameWarning: '&eAviso: Esse tipo de marcador não renderiza em items frames'
     LimitReached: '&cYou can only create <Limit> markers on one map!'
   # Date format used where a time based variable is displayed
   DateFormat: dd/MM/yyyy HH:mm:ss zzz
@@ -92,11 +92,11 @@ Settings:
   # For example "imageframe.createlimit.vip"
   # Players with no groups will be treated as "default" unless they have "imageframe.createlimit.unlimited"
   PlayerCreationLimit:
-    default: 10
-    vip: 15
-    moderator: 20
+    default: -1
+    vip: -1
+    moderator: -1
   # Max amount of markers on a individual map
-  MapMarkerLimit: 20
+  MapMarkerLimit: -1
   CombinedMapItem:
     Name: '&bImageMap &f- &f{Name} &7({Width} x {Height})'
     Lore:

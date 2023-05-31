@@ -1,9 +1,9 @@
 messages:
   prefix: '&6ArmedArmorstands &8» &7'
-  no-permission: '&cYou''re not allowed to use this feature!'
+  no-permission: '&cVocê não tem permissão para fazer isso'
 permission:
   permission: armorstand.arm
-  required: true
+  required: false
   send-message: true
 settings:
   consume-sticks: true
