@@ -21,7 +21,7 @@ metrics_enabled: true
 enchantment_angel:
   # Enable enchantment angel
   # Default: true
-  enabled: true
+  enabled: false
 
   # Acceleration percentage. Each tick, the current flying speed is increased X
   # percent towards the target speed. Low values (~0.1) typically result in a
@@ -97,12 +97,12 @@ enchantment_angel:
   # Whether the loot should be registered. Set to false to quickly disable all
   # associated loot.
   # Default: true
-  register_loot: true
+  register_loot: false
 
   # Whether these recipes should be registered at all. Set to false to quickly
   # disable all associated recipes.
   # Default: true
-  register_recipes: true
+  register_recipes: false
 
   # Flying speed in blocks per second for each enchantment level.
   # Valid values: [0.0,)
@@ -467,7 +467,7 @@ enchantment_seeding:
 enchantment_soulbound:
   # Enable enchantment soulbound
   # Default: true
-  enabled: true
+  enabled: false
 
   # Window to allow Soulbound item drop immediately after a previous drop in
   # milliseconds
@@ -538,12 +538,12 @@ enchantment_soulbound:
   # Whether the loot should be registered. Set to false to quickly disable all
   # associated loot.
   # Default: true
-  register_loot: true
+  register_loot: false
 
   # Whether these recipes should be registered at all. Set to false to quickly
   # disable all associated recipes.
   # Default: true
-  register_recipes: true
+  register_recipes: false
 
 enchantment_take_off:
   # Enable enchantment take_off
