@@ -21,7 +21,7 @@ metrics_enabled: true
 autostop:
   # Enable automatic server stop after certain time without online players.
   # Default: true
-  enabled: true
+  enabled: false
 
   command_autostop:
     # Enable command autostop
@@ -63,7 +63,7 @@ hazard_protection:
   # Enable hazard protection. The options below allow more fine-grained control
   # over the hazards to protect from.
   # Default: true
-  enabled: true
+  enabled: false
 
   # Disables explosions from creepers.
   # Default: true
