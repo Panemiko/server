@@ -10,7 +10,7 @@ lang: "inherit"
 
 # The module will only add functionality if this is set to true.
 # Default: true
-enabled: true
+enabled: false
 
 # Enable plugin metrics via bStats. You can opt-out here or via the global bStats
 # configuration. All collected information is completely anonymous and publicly
