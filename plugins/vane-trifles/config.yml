@@ -499,7 +499,7 @@ scrolls:
   item_death_scroll:
     # Enable item death_scroll
     # Default: true
-    enabled: true
+    enabled: false
 
     # Allow this scroll to be repaired via the mending enchantment.
     # Default: false
@@ -551,17 +551,17 @@ scrolls:
     # Whether the loot should be registered. Set to false to quickly disable all
     # associated loot.
     # Default: true
-    register_loot: true
+    register_loot: false
 
     # Whether these recipes should be registered at all. Set to false to quickly
     # disable all associated recipes.
     # Default: true
-    register_recipes: true
+    register_recipes: false
 
   item_home_scroll:
     # Enable item home_scroll
     # Default: true
-    enabled: true
+    enabled: false
 
     # Allow this scroll to be repaired via the mending enchantment.
     # Default: false
@@ -615,17 +615,17 @@ scrolls:
     # Whether the loot should be registered. Set to false to quickly disable all
     # associated loot.
     # Default: true
-    register_loot: true
+    register_loot: false
 
     # Whether these recipes should be registered at all. Set to false to quickly
     # disable all associated recipes.
     # Default: true
-    register_recipes: true
+    register_recipes: false
 
   item_lodestone_scroll:
     # Enable item lodestone_scroll
     # Default: true
-    enabled: true
+    enabled: false
 
     # Allow this scroll to be repaired via the mending enchantment.
     # Default: false
@@ -677,17 +677,17 @@ scrolls:
     # Whether the loot should be registered. Set to false to quickly disable all
     # associated loot.
     # Default: true
-    register_loot: true
+    register_loot: false
 
     # Whether these recipes should be registered at all. Set to false to quickly
     # disable all associated recipes.
     # Default: true
-    register_recipes: true
+    register_recipes: false
 
   item_spawn_scroll:
     # Enable item spawn_scroll
     # Default: true
-    enabled: true
+    enabled: false
 
     # Allow this scroll to be repaired via the mending enchantment.
     # Default: false
@@ -739,17 +739,17 @@ scrolls:
     # Whether the loot should be registered. Set to false to quickly disable all
     # associated loot.
     # Default: true
-    register_loot: true
+    register_loot: false
 
     # Whether these recipes should be registered at all. Set to false to quickly
     # disable all associated recipes.
     # Default: true
-    register_recipes: true
+    register_recipes: false
 
   item_unstable_scroll:
     # Enable item unstable_scroll
     # Default: true
-    enabled: true
+    enabled: false
 
     # Allow this scroll to be repaired via the mending enchantment.
     # Default: false
@@ -801,12 +801,12 @@ scrolls:
     # Whether the loot should be registered. Set to false to quickly disable all
     # associated loot.
     # Default: true
-    register_loot: true
+    register_loot: false
 
     # Whether these recipes should be registered at all. Set to false to quickly
     # disable all associated recipes.
     # Default: true
-    register_recipes: true
+    register_recipes: false
 
 sickles:
   # Several sickles that allow players to harvest crops in a radius.
@@ -1303,12 +1303,12 @@ storage:
 xp_bottles:
   # Several xp bottles storing a certain amount of experience.
   # Default: true
-  enabled: true
+  enabled: false
 
   item_large_xp_bottle:
     # Enable item large_xp_bottle
     # Default: true
-    enabled: true
+    enabled: false
 
     # Level capacity.
     # Valid values: Any int
