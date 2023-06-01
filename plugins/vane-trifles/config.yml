@@ -85,7 +85,7 @@ command_heads:
 command_setspawn:
   # Enable command setspawn
   # Default: true
-  enabled: true
+  enabled: false
 
 doubledoor:
   # Enable updating of double doors automatically when one of the doors is
@@ -117,7 +117,7 @@ fast_walking:
 item_empty_xp_bottle:
   # Enable item empty_xp_bottle
   # Default: true
-  enabled: true
+  enabled: false
 
   # The durability of this item. Set to 0 to use the durability properties of
   # whatever base material the item is made of.
@@ -158,12 +158,12 @@ item_empty_xp_bottle:
   # Whether the loot should be registered. Set to false to quickly disable all
   # associated loot.
   # Default: true
-  register_loot: true
+  register_loot: false
 
   # Whether these recipes should be registered at all. Set to false to quickly
   # disable all associated recipes.
   # Default: true
-  register_recipes: true
+  register_recipes: false
 
 item_file:
   # Enable item file
@@ -285,7 +285,7 @@ item_north_compass:
 item_papyrus_scroll:
   # Enable item papyrus_scroll
   # Default: true
-  enabled: true
+  enabled: false
 
   # The durability of this item. Set to 0 to use the durability properties of
   # whatever base material the item is made of.
@@ -330,12 +330,12 @@ item_papyrus_scroll:
   # Whether the loot should be registered. Set to false to quickly disable all
   # associated loot.
   # Default: true
-  register_loot: true
+  register_loot: false
 
   # Whether these recipes should be registered at all. Set to false to quickly
   # disable all associated recipes.
   # Default: true
-  register_recipes: true
+  register_recipes: false
 
 item_reinforced_elytra:
   # Enable item reinforced_elytra
