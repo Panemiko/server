@@ -2,6 +2,7 @@
 /cache
 /libraries
 /versions
+/map-color-cache.dat
 
 # Usage files
 /logs
