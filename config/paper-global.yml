@@ -56,12 +56,11 @@ logging:
   use-rgb-for-named-text-colors: true
 messages:
   kick:
-    authentication-servers-down: <lang:multiplayer.disconnect.authservers_down>
-    connection-throttle: Connection throttled! Please wait before reconnecting.
+    authentication-servers-down: Servidores de autenticação fora do ar
+    connection-throttle: Conexão instável. Espere para reconectar.
     flying-player: <lang:multiplayer.disconnect.flying>
     flying-vehicle: <lang:multiplayer.disconnect.flying>
-  no-permission: <red>I'm sorry, but you do not have permission to perform this command.
-    Please contact the server administrators if you believe that this is in error.
+  no-permission: <red>Você não tem permissão para realizar isso
   use-display-name-in-quit-message: false
 misc:
   chat-threads:
@@ -113,15 +112,15 @@ timings:
   - proxies.velocity.secret
   history-interval: 300
   history-length: 3600
-  server-name: Unknown Server
+  server-name: Surredstone
   server-name-privacy: false
-  url: https://timings.aikar.co/
+  url: https://surredstone.net/
   verbose: true
 unsupported-settings:
   allow-grindstone-overstacking: false
-  allow-headless-pistons: false
-  allow-permanent-block-break-exploits: false
-  allow-piston-duplication: false
+  allow-headless-pistons: true
+  allow-permanent-block-break-exploits: true
+  allow-piston-duplication: true
   perform-username-validation: true
 watchdog:
   early-warning-delay: 10000
