@@ -1,0 +1,32 @@
+animations:
+  tablist:
+    # Text changing interval in milliseconds (ticks).
+    interval: 60
+
+    # Display the text randomly?
+    random: false
+
+    # The list of texts that will appear
+    text:
+    - "&b&lSurredstone"
+    - "&6&lSurredstone"
+    - "&4&lSurredstone"
+    - "&9&lSurredstone"
+    - "&a&lSurredstone"
+    - "&e&lSurredstone"
+    - "&5&lSurredstone"
+    - "&b&lSurredstone"
+    - "&6&lSurredstone"
+    - "&4&lSurredstone"
+    - "&9&lSurredstone"
+    - "&a&lSurredstone"
+    - "&e&lSurredstone"
+    - "&5&lSurredstone"
+    - "&b&lSurredstone"
+    - "&6&lSurredstone"
+    - "&4&lSurredstone"
+    - "&9&lSurredstone"
+    - "&a&lSurredstone"
+    - "&e&lSurredstone"
+    - "&5&lSurredstone"
+    - "&b&lSurredstone"

@@ -1,0 +1,13 @@
+# This global group will be applied to all players
+globalGroup:
+  prefix: ""
+  tabname: ""
+  suffix: ""
+
+groups:
+  # Vault group name OR player name OR custom group name (custom is assigned via permission)
+
+  Default:
+    prefix: "&f"
+    tabname: "%player%"
+    suffix: ""

@@ -1,0 +1,54 @@
+nameValidation: true
+timeout: 60
+passwordValidation:
+  minLength: 4
+  maxLength: 32
+  minUppercase: 0
+  minNumbers: 0
+pinValidation:
+  minLength: 4
+  maxLength: 4
+effects:
+  title: true
+  particles: true
+  sounds: true
+  blindness: false
+welcomeMessage:
+  text:
+  - '&7Welcome to &6server name&7!'
+  enabled: false
+sendPinSetReminder: false
+sessionExpiresIn: 120
+onFirstJoin:
+  teleport: false
+  x: 0
+  y: 0
+  z: 0
+  yaw: 0
+  pitch: 0
+  world: world
+onJoin:
+  # Concealment if set to true (also requires teleport to be true) will teleport a player to their position after authentication
+  concealment: true
+  teleport: true
+  x: 0
+  y: 0
+  z: 0
+  yaw: 0
+  pitch: 0
+  world: world
+duplicateIpProtection:
+  # 0 - No protection
+  # 1 - Max is applied to online players
+  # 2 - Max is applied to registered players
+  protectionLevel: 0
+  maxPerIp: 1
+  notifyOnDuplicateIp: true
+database:
+  type: sqlite # mysql or sqlite
+  credentials: # Only for mysql, ignore if using sqlite
+    host: 127.0.0.1:3306
+    user: root
+    password: root
+    database: authy
+lang: en_us
