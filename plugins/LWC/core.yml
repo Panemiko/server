@@ -10,7 +10,6 @@ core:
     factionCheck: false
     groupPrefix: group.
     updateNotifier: true
-    bindMessageCacheSize: 1000
 optional:
     onlyProtectWhenOwnerIsOnline: false
     onlyProtectWhenOwnerIsOffline: false

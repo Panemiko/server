@@ -42,6 +42,9 @@
 # EZColors
 /plugins/EZColors/storage
 
+# HiddenArmor
+/plugins/HiddenArmor/enabled-players.yml
+
 # ImageFrame
 /plugins/ImageFrame/data
 
@@ -63,6 +66,9 @@
 # SkinsRestorer
 /plugins/SkinsRestorer/Players
 /plugins/SkinsRestorer/Skins
+
+# Tweakin
+/plugins/Tweakin/preset-poses.json
 
 # XCatch
 /plugins/XCatch/data.json.gz
