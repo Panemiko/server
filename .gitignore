@@ -17,3 +17,52 @@
 
 # World folders
 /world*
+
+#
+# Plugins
+#
+
+# ActionHealth
+/plugins/ActionHealth/players
+
+# AngelChest
+/plugins/AngelChest/angelchests
+/plugins/AngelChest/logs
+
+# Authy
+/plugins/Authy/data.db
+/plugins/Authy/lastdb
+
+# DiscordSRV
+/plugins/DiscordSRV/config.yml
+
+# eBackup
+/backups
+
+# EZColors
+/plugins/EZColors/storage
+
+# ImageFrame
+/plugins/ImageFrame/data
+
+# LuckPerms
+/plugins/LuckPerms/libs
+/plugins/LuckPerms/luckperms*
+
+# LWC
+/plugins/LWC/backups
+/plugins/LWC/lwc.db
+
+# Pl3xMap
+/plugins/Pl3xMap/web
+/plugins/Pl3xMap/markers
+
+# ProtocolLib
+/plugins/ProtocolLib/lastupdate
+
+# SkinsRestorer
+/plugins/SkinsRestorer/Players
+/plugins/SkinsRestorer/Skins
+
+# XCatch
+/plugins/XCatch/data.json.gz
