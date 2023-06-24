@@ -22,6 +22,8 @@
 # Plugins
 #
 
+/plugins/update
+
 # ActionHealth
 /plugins/ActionHealth/players
 
@@ -51,6 +53,7 @@
 # LuckPerms
 /plugins/LuckPerms/libs
 /plugins/LuckPerms/luckperms*
+/plugins/LuckPerms/translations/repository
 
 # LWC
 /plugins/LWC/backups
