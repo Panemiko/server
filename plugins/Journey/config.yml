@@ -1,0 +1,19 @@
+search:
+  flag:
+    default-timeout: '30'
+    default-dig: 'false'
+    default-fly: 'true'
+    default-door: 'true'
+  max-path-block-count: '100000'
+  max-searches: '16'
+  chunk-gen:
+    allow: 'false'
+storage:
+  type: sqlite
+  cache:
+    max_cells: '500000'
+  auth:
+    database: my_database
+    password: p@ssword
+    username: username
+    address: my.address

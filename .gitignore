@@ -37,6 +37,7 @@
 
 # DiscordSRV
 /plugins/DiscordSRV/config.yml
+/plugins/DiscordSRV/linkedaccounts.json
 
 # eBackup
 /backups
@@ -49,6 +50,15 @@
 
 # ImageFrame
 /plugins/ImageFrame/data
+
+# InteractiveChat
+/plugins/InteractiveChat/database.db
+/plugins/InteractiveChatDiscordSrvAddon/cache
+/plugins/InteractiveChatDiscordSrvAddon/built-in
+/plugins/InteractiveChatDiscordSrvAddon/libs
+
+# Journey
+/plugins/Journey/journey.db
 
 # LuckPerms
 /plugins/LuckPerms/libs
