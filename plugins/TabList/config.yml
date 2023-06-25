@@ -3,17 +3,6 @@ hook:
   # Hook to PlaceholderAPI to use custom placeholders.
   placeholderapi: true
 
-# This option monitors server performance. If the server's TPS is less than the set value,
-# TabList will cancels all currently running schedulers to improve server performance.
-# TabList will not restart these schedulers (ie animations, group updates, etc.),
-# so you have to do it manually, by reconnecting to the server or by reloading the plugin.
-# At values below 8-5, TabList is almost unable to stop its own running processes,
-# as the server is already under a very heavy load.
-# The values should be between 5-18
-# If the value is below 5 or above 18, the default value will be 16.0
-# To disable this feature set to -1
-tps-performance-observation-value: -1.0
-
 # Fake players that can be added to the player list.
 fake-players:
   enabled: false
@@ -23,6 +12,7 @@ fake-players:
 
 # If enabled, the gray color will not appear to other players when the player's game mode is spectator.
 # The gray color will only show for the spectator player.
+# Requires ProtocolLib!
 remove-gray-color-from-tab-in-spectator: false
 
 # true - does not count vanished players in %online-players% placeholder.
@@ -40,8 +30,10 @@ count-vanished-staffs: true
 hide-player-from-tab-when-afk: false
 
 # Hide all players from the player list?
-# This removes all players from the player list,
-# resulting to only display the tablist with header and footer without players.
+# This removes all players from the player list, but the player that has the
+# group set is retained as it is not changed during removal, so your group
+# will be restored if this option is disabled.
+# Requires ProtocolLib to fix view distance issue! (https://github.com/montlikadani/TabList/issues/147)
 hide-players-from-tablist: false
 
 # Different player list in different world.
@@ -69,13 +61,13 @@ placeholder-format:
     # Should the AFK format display in right or left side?
     # true - displays in right side
     # false - displays in left side
-    show-in-right-or-left-side: true
+    show-in-right-or-left-side: false
 
     # Show player's group if the player is AFK?
     show-player-group: true
 
     # Format when the player is AFK.
-    format-yes: '&7 [AFK]&r '
+    format-yes: '&c[AFK] &r'
 
     # Format when the player is not AFK.
     format-no: ''
@@ -86,14 +78,14 @@ placeholder-format:
 
     # Time zones: https://www.mkyong.com/java/java-display-list-of-timezone-with-gmt/
     # Or google it: "what is my time zone"
-    time-zone: GMT0
+    time-zone: GMT-3
 
     # Use system default time zone instead of searching for that?
     use-system-zone: false
 
     # Formats/examples: https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
     # Format of %server-time% placeholder.
-    time-format: mm:HH
+    time-format: HH:mm
 
     # Format of %date% placeholder.
     date-format: dd/MM/yyyy
@@ -123,6 +115,20 @@ placeholder-format:
     # Example: 3 = 19.14
     size: 2
 
+  # Memory bar settings for %memory_bar% variable
+  memory-bar:
+    char: '|'
+    size: 80
+    colors:
+      used: '&c'
+      free: '&a'
+
+      # When the server memory less than 80
+      allocation: '&e'
+
+      # When the server memory is on critical level (less than 40) and some resource need memory to run.
+      released: '&6'
+
 # Enable changing of prefix & suffix in player list?
 change-prefix-suffix-in-tablist:
   enable: true
@@ -142,7 +148,7 @@ change-prefix-suffix-in-tablist:
 
   # Automatically add groups from another plugins to the tablist groups.yml on every reload?
   # If a plugin does not support Vault, it will not be added.
-  sync-plugins-groups-with-tablist: true
+  sync-plugins-groups-with-tablist: false
 
   # Hide player's group in player list when the player is vanished?
   # Requires Essentials, SuperVanish, PremiumVanish or CMI plugin!
@@ -158,12 +164,6 @@ change-prefix-suffix-in-tablist:
   # false - applies the group that has the higher priority in the permission plugin
   prefer-primary-vault-group: false
 
-  # Follow the name tag visibility for players to show the name tag above player or not,
-  # depending if a scoreboard team with visibility 'hidden' is exist.
-  # true - Follows the name tag visibility and hides if there is a scoreboard team created with visibility 'hidden'
-  # false - Always shows the name tag above player
-  followNameTagVisibility: false
-
 # Tablist objective types
 # Shows your current health (with life indicator), your current ping or any NUMBER placeholder
 # after the player's name (before the ping indicator).
@@ -176,15 +176,27 @@ tablist-object-type:
   # custom - custom placeholder
   type: ping
 
-  # How often should it refresh the values in seconds?
+  # Interval for objects refreshing in seconds.
   refresh-interval: 3
-
-  # The unique integer variable to be displayed.
-  custom-value: '%level%'
 
   # In these worlds the objects will not be displayed
   disabled-worlds:
   - testingWorld
+
+  # Objective settings
+  object-settings:
+
+    # The player's health - displayed after the player's name.
+    health:
+
+      # For these players the health will not be displayed
+      restricted-players:
+      - exampleplayer
+      - players
+
+    # Custom placeholder - accepts only number-ending placeholders, like %level%
+    custom:
+      value: '%level%'
 
 # Check for updates?
 check-update: true
