@@ -59,10 +59,12 @@ ftp:
 # What you want in the backup.
 # By default, everything will be backupped, you can remove files/directories in the ignore section
 backup:
-    pluginjars: true # The .jar files for the plugins
+    pluginjars: false # The .jar files for the plugins
     pluginconfs: true # The data folder of each plugin
     ignore: # Files/directories to ignore and NOT backup
         - 'backups'
         - 'plugins/Pl3xMap/web'
+        - 'plugins/InteractiveChatDiscordSrvAddon/built-in'
+        - 'plugins/InteractiveChatDiscordSrvAddon/libs'
         - 'logs'
         - 'cache'
