@@ -42,28 +42,28 @@ chat_message_formatter:
 command_gamemode:
   # Enable command gamemode
   # Default: true
-  enabled: true
+  enabled: false
 
 command_slimechunk:
   # Enable command slimechunk
   # Default: true
-  enabled: true
+  enabled: false
 
 command_time:
   # Enable command time
   # Default: true
-  enabled: true
+  enabled: false
 
 command_weather:
   # Enable command weather
   # Default: true
-  enabled: true
+  enabled: false
 
 hazard_protection:
   # Enable hazard protection. The options below allow more fine-grained control
   # over the hazards to protect from.
   # Default: true
-  enabled: false
+  enabled: true
 
   # Disables explosions from creepers.
   # Default: true
@@ -71,24 +71,24 @@ hazard_protection:
 
   # Disables entities from breaking doors (various zombies).
   # Default: true
-  disable_door_breaking: true
+  disable_door_breaking: false
 
   # Disables enderman block pickup.
   # Default: true
-  disable_enderman_block_pickup: true
+  disable_enderman_block_pickup: false
 
   # Disables fire from lightning.
   # Default: true
-  disable_lightning_fire: true
+  disable_lightning_fire: false
 
   # Disables explosions from the wither.
   # Default: true
-  disable_wither_explosions: true
+  disable_wither_explosions: false
 
   # Restrict wither spawning to a list of worlds defined by
   # wither_world_whitelist.
   # Default: true
-  enable_wither_world_whitelist: true
+  enable_wither_world_whitelist: false
 
   # A list of worlds in which the wither may be spawned.
   # Default:

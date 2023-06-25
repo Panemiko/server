@@ -96,7 +96,7 @@ doubledoor:
 fast_walking:
   # Enable faster walking on certain materials.
   # Default: true
-  enabled: true
+  enabled: false
 
   # Speed effect duration in milliseconds.
   # Valid values: [50,5000]
@@ -234,7 +234,7 @@ item_finder:
 item_north_compass:
   # Enable item north_compass
   # Default: true
-  enabled: true
+  enabled: false
 
   # The durability of this item. Set to 0 to use the durability properties of
   # whatever base material the item is made of.
@@ -340,7 +340,7 @@ item_papyrus_scroll:
 item_reinforced_elytra:
   # Enable item reinforced_elytra
   # Default: true
-  enabled: true
+  enabled: false
 
   # Amount of defense points.
   # Valid values: [0.0,)
@@ -488,7 +488,7 @@ repair_cost_limiter:
 scrolls:
   # Several scrolls that allow player teleportation, and related behavior.
   # Default: true
-  enabled: true
+  enabled: false
 
   # A cooldown in milliseconds that is applied when the player takes damage
   # (prevents combat logging). Set to 0 to allow combat logging.

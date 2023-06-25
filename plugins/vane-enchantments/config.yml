@@ -548,7 +548,7 @@ enchantment_soulbound:
 enchantment_take_off:
   # Enable enchantment take_off
   # Default: true
-  enabled: true
+  enabled: false
 
   # Boost strength for each enchantment level.
   # Valid values: [0.0,)
@@ -729,7 +729,7 @@ enchantment_unbreakable:
 enchantment_wings:
   # Enable enchantment wings
   # Default: true
-  enabled: true
+  enabled: false
 
   # Boost cooldown in milliseconds for each enchantment level.
   # Valid values: [0,)

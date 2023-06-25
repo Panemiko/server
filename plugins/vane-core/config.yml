@@ -28,17 +28,17 @@ client_side_translations: true
 command_customitem:
   # Enable command customitem
   # Default: true
-  enabled: true
+  enabled: false
 
 command_enchant:
   # Enable command enchant
   # Default: true
-  enabled: true
+  enabled: false
 
 command_vane:
   # Enable command vane
   # Default: true
-  enabled: true
+  enabled: false
 
 hide_commands:
   # Hide error messages for all commands for which a player has no permission, by
