@@ -45,10 +45,10 @@
 #
 # NOTE: The %reply% placeholder needs to be present in the format if you want the DiscordToMinecraftMessageReplyFormat to display in your message.
 #
-DiscordToMinecraftChatMessageFormat: "[<aqua>Discord</aqua> | %toprolecolor%%toprolealias%<reset>] %name%%reply% » %message%"
-DiscordToMinecraftChatMessageFormatNoRole: "[<aqua>Discord</aqua>] %name%%reply% » %message%"
+DiscordToMinecraftChatMessageFormat: "<aqua>DC</aqua> %name%%reply%: %message%"
+DiscordToMinecraftChatMessageFormatNoRole: "<aqua>DC</aqua> %name%%reply%: %message%"
 DiscordToMinecraftAllRolesSeparator: " | "
-DiscordToMinecraftMessageReplyFormat: " (replying to %name%)"
+DiscordToMinecraftMessageReplyFormat: " (respondendo %name%)"
 
 # Minecraft -> Discord message
 #
@@ -78,8 +78,8 @@ DiscordToMinecraftMessageReplyFormat: " (replying to %name%)"
 #                  example: Global
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftChatToDiscordMessageFormat: "**%primarygroup%** %displayname% » %message%"
-MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%displayname% » %message%"
+MinecraftChatToDiscordMessageFormat: "%displayname%: %message%"
+MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%displayname%: %message%"
 
 # Chat channel plugin message
 # This is a special message that's only used when a supported chat channel plugin is hooked
@@ -116,7 +116,7 @@ ChatChannelHookMessageFormat: "%channelcolor%[%channelnickname%]&r %message%"
 #
 DynmapNameFormat: "[Discord | %toprolealias%] %username%"
 DynmapChatFormat: "%message%"
-DynmapDiscordFormat: "[Dynmap] %name% » %message%"
+DynmapDiscordFormat: "[Dynmap] %name%: %message%"
 
 # Discord console channel message
 # This is the format used when sending a line from the console to the console channel, if enabled
@@ -149,7 +149,7 @@ DiscordConsoleChannelPadding: 0
 # %error%: the reason for the error
 #           example: no permission
 #
-DiscordChatChannelConsoleCommandNotifyErrorsFormat: "**%user%**, you tried running a command. Unfortunately, there was an error: %error%"
+DiscordChatChannelConsoleCommandNotifyErrorsFormat: "**%user%**, erro ao executar o comando %error%"
 
 # Discord chat channel player list command
 # Messages used for when someone runs the playerlist command in a chat channel
@@ -166,8 +166,8 @@ DiscordChatChannelConsoleCommandNotifyErrorsFormat: "**%user%**, you tried runni
 #   PlaceholderAPI placeholders are also supported
 # DiscordChatChannelListCommandAllPlayersSeparator: the separator used in between players
 #
-DiscordChatChannelListCommandFormatOnlinePlayers: "**Online players (%playercount%):**"
-DiscordChatChannelListCommandFormatNoOnlinePlayers: "**No online players**"
+DiscordChatChannelListCommandFormatOnlinePlayers: "**Players online (%playercount%):**"
+DiscordChatChannelListCommandFormatNoOnlinePlayers: "**Nenhum jogador online**"
 DiscordChatChannelListCommandPlayerFormat: "%displayname%"
 DiscordChatChannelListCommandAllPlayersSeparator: ", "
 
@@ -196,16 +196,16 @@ DiscordChatChannelListCommandAllPlayersSeparator: ", "
 MinecraftPlayerJoinMessage:
   Enabled: true
   Webhook:
-    Enable: false
-    AvatarUrl: "%botavatarurl%"
-    Name: "%botname%"
+    Enable: true
+    AvatarUrl: "%embedavatarurl%"
+    Name: "%username%"
   Content: ""
   Embed:
     Enabled: true
     Color: "#00ff00"
     Author:
       ImageUrl: "%embedavatarurl%"
-      Name: "%username% joined the server"
+      Name: "%username% entrou no servidor"
       Url: ""
     ThumbnailUrl: ""
     Title:
@@ -223,7 +223,7 @@ MinecraftPlayerJoinMessage:
 # %message%:        join message as seen in-game
 #
 MinecraftPlayerFirstJoinMessage:
-  Enabled: true
+  Enabled: false
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
@@ -254,16 +254,16 @@ MinecraftPlayerFirstJoinMessage:
 MinecraftPlayerLeaveMessage:
   Enabled: true
   Webhook:
-    Enable: false
-    AvatarUrl: "%botavatarurl%"
-    Name: "%botname%"
+    Enable: true
+    AvatarUrl: "%embedavatarurl%"
+    Name: "%username%"
   Content: ""
   Embed:
     Enabled: true
     Color: "#ff0000"
     Author:
       ImageUrl: "%embedavatarurl%"
-      Name: "%username% left the server"
+      Name: "%username% saiu do servidor"
       Url: ""
     ThumbnailUrl: ""
     Title:
@@ -284,9 +284,9 @@ MinecraftPlayerLeaveMessage:
 MinecraftPlayerDeathMessage:
   Enabled: true
   Webhook:
-    Enable: false
-    AvatarUrl: "%botavatarurl%"
-    Name: "%botname%"
+    Enable: true
+    AvatarUrl: "%embedavatarurl%"
+    Name: "%username%"
   Content: ""
   Embed:
     Enabled: true
@@ -314,16 +314,16 @@ MinecraftPlayerDeathMessage:
 MinecraftPlayerAchievementMessage:
   Enabled: true
   Webhook:
-    Enable: false
-    AvatarUrl: "%botavatarurl%"
-    Name: "%botname%"
+    Enable: true
+    AvatarUrl: "%embedavatarurl%"
+    Name: "%username%"
   Content: ""
   Embed:
     Enabled: true
     Color: "#ffd700"
     Author:
       ImageUrl: "%embedavatarurl%"
-      Name: "%username% has made the advancement %achievement%!"
+      Name: "%username% conseguiu a conquista %achievement%!"
       Url: ""
     ThumbnailUrl: ""
     Title:
@@ -363,11 +363,11 @@ MinecraftPlayerAchievementMessage:
 # %tps%:           average TPS of the server
 # PlaceholderAPI placeholders are also supported
 #
-ChannelTopicUpdaterChatChannelTopicFormat: "%playercount%/%playermax% players online | %totalplayers% unique players ever joined | Server online for %uptimemins% minutes | Last update: %date%"
-ChannelTopicUpdaterConsoleChannelTopicFormat: "TPS: %tps% | Mem: %usedmemorygb%GB used/%freememorygb%GB free/%maxmemorygb%GB max | %serverversion%"
+ChannelTopicUpdaterChatChannelTopicFormat: "%playercount%/%playermax% jogadores online | Servidor online por %uptimemins% minutos"
+ChannelTopicUpdaterConsoleChannelTopicFormat: "TPS: %tps% | Mem: %usedmemorygb%GB usado/%freememorygb%GB livre/%maxmemorygb%GB max | %serverversion%"
 # AtServerShutdownFormats ONLY supports %totalplayers%, %serverversion%, & %date% / %time%
-ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: "Server is offline | %totalplayers% unique players ever joined"
-ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "Server is offline | %serverversion%"
+ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: "Servidor fechado"
+ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "Servidor fechado"
 
 # Discord command message
 # This is the message sent to players when they run "/discord". It's recommended to leave command syntax as a part of this
@@ -385,8 +385,8 @@ UnknownCommandMessage: "&bThat command doesn't exist!"
 # DiscordChatChannelServerStartupMessage: message to be sent when server starts; leave blank to disable
 # DiscordChatChannelServerShutdownMessage: message to be sent when server shuts down; leave blank to disable
 #
-DiscordChatChannelServerStartupMessage: ":white_check_mark: **Server has started**"
-DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **Server has stopped**"
+DiscordChatChannelServerStartupMessage: ":white_check_mark: **Servidor aberto**"
+DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **Servidor fechado**"
 
 # Server watchdog message
 #
@@ -401,7 +401,7 @@ DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **Server has stopped*
 #                        you can use ServerWatchdogTimeout as a placeholder by using %timeout%
 #                        you can use the %timestamp% placeholder for use in discord's timestamp format
 #
-ServerWatchdogMessage: "<t:%timestamp%:R> %guildowner%, the server hasn't ticked in %timeout% seconds :fire::bangbang:"
+ServerWatchdogMessage: "<t:%timestamp%:R> %guildowner%, server tá tocando as mais brabas do raul gil"
 
 # Account link messages
 # These are messages used when accounts are linked
@@ -409,15 +409,11 @@ ServerWatchdogMessage: "<t:%timestamp%:R> %guildowner%, the server hasn't ticked
 # Available placeholders:
 # CodeGenerated:                %code%:         the code generated for the player to link their account with
 #                               %botname%:      the name of the bot on Discord
-# UnknownCode/InvalidCode:      %code%:         the code generated for the player to link their account with
-#                               %mention%:      the mention to Discord account
 # DiscordAccountLinked:         %name%:         the name of the Minecraft player that the user's Discord account was linked to
 #                               %displayname%:  the display name of the Minecraft player that the user's Discord account was linked to
 #                               %uuid%:         the uuid of the Minecraft player that the user's Discord account was linked to
-#                               %mention%:      the mention to Discord account
 # DiscordAccountAlreadyLinked:  %uuid%:         the Minecraft uuid of the user's linked Minecraft account
 #                               %username%:     the Minecraft username of the user's linked Minecraft account
-#                               %mention%:      the mention to Discord account
 # DiscordLinkedAccountRequired  %message%:      the message the user was not able to send because they were not linked
 # MinecraftAccountLinked:       %id%:           the discord id of the Discord user that the user's Minecraft account was linked to
 #                               %username%:     the discord name of the Discord user that the user's Minecraft account was linked to
