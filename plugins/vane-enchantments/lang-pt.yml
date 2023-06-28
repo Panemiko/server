@@ -1,0 +1,57 @@
+version: 4
+
+resource_pack_lang_code: 'pt_br'
+
+item_ancient_tome:
+  name: "Tomo Antigo"
+
+item_enchanted_ancient_tome:
+  name: "Tomo Antigo Encantado"
+
+item_ancient_tome_of_knowledge:
+  name: "Tomo Antigo do Conhecimento"
+
+item_enchanted_ancient_tome_of_knowledge:
+  name: "Tomo Antigo do Conhecimento Encantado"
+
+item_ancient_tome_of_the_gods:
+  name: "Tomo Antigo dos Deuses"
+
+item_enchanted_ancient_tome_of_the_gods:
+  name: "Tomo Antigo dos Deuses Encantado"
+
+enchantment_angel:
+  name: "Anjo"
+
+enchantment_grappling_hook:
+  name: "Gancho de Agarrar"
+
+enchantment_hell_bent:
+  name: "Inclinado ao Inferno"
+
+enchantment_leafchopper:
+  name: "Cortador de Folhas"
+
+enchantment_lightning:
+  name: "Raio"
+
+enchantment_rake:
+  name: "Ancinho"
+
+enchantment_seeding:
+  name: "Semeadura"
+
+enchantment_soulbound:
+  name: "Vínculo da Alma"
+  drop_lock_warning: "Itens com Vínculo da Alma só podem ser soltos usando o mouse"
+  drop_cooldown: "Solte novamente para confirmar"
+  dropped_notification: "Item com Vínculo da Alma solto: %1$s"
+
+enchantment_take_off:
+  name: "Decolar"
+
+enchantment_unbreakable:
+  name: "Indestrutível"
+
+enchantment_wings:
+  name: "Asas"

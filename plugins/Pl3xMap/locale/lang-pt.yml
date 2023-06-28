@@ -1,0 +1,125 @@
+prefix:
+  command: '<grey>[<gradient:#C028FF:#5B00FF>Pl3xMap</gradient>]</grey> '
+command:
+  base: Veja o mapa em '<grey><click:open_url:'<endereço-web>'><endereço-web></click></grey>'
+  event:
+    click-for-help: Clique para obter ajuda
+    click-to-confirm: Clique para confirmar
+    argument:
+      optional-player: Padrão é o jogador executando se não for especificado (o console deve especificar um jogador)
+      optional-center: Padrão é (<white>0<gray>,</gray> 0</white>) se não for especificado
+      optional-zoom: Nível de zoom do mapa
+      required-renderer: O Renderer é obrigatório
+      required-world: O Mundo é obrigatório
+  confirm:
+    description: Confirmar um comando pendente
+    not-rendering: <red>Confirmação necessária. Confirme usando <grey>/map confirmar
+    success: <red>Você não tem nenhuma confirmação pendente
+  fullrender:
+    description: Renderizar completamente um mundo
+    starting: <green>Iniciando renderização completa. Verifique </grey>/map status</grey> para mais informações
+  help:
+    description: Obter ajuda para os comandos do Pl3xmap
+    argument:
+      query: Consulta de Ajuda
+  hide:
+    description: Ocultar um jogador do mapa
+    already-hidden: <grey><player> <red>já está oculto no mapa
+    success: <grey><player> <green>agora está oculto no mapa
+  pause:
+    description: Alternar o estado de pausa dos renderizadores
+    paused: <green>Os renderizadores estão pausados agora
+    unpaused: <green>Os renderizadores estão despausados agora
+  radiusrender:
+    description: Renderizar uma seção de um mundo
+    starting: <green>Iniciando renderização por raio. Verifique </grey>/map status</grey> para mais informações
+  reload:
+    description: Recarrega o plugin
+    success: <green>Pl3xMap <grey>v<version></grey> recarregado
+  resetmap:
+    description: Cancelar renderização ativa de um mundo
+    begin: <green>O reset do mapa para <grey><world></grey> foi iniciado
+    success: <green>Mapa resetado com sucesso para <grey><world>
+    failed: <red>Não foi possível resetar o mapa para <grey><world>
+  show:
+    description: Mostrar um jogador no mapa
+    not-hidden: <grey><player> <red>não está oculto no mapa
+    success: <grey><player> <green>não está mais oculto no mapa
+  status:
+    description: Ver o status de renderização
+  stitch:
+    description: Unir tiles em uma única imagem
+    missing-directory: <red>Não foi possível encontrar o diretório de tiles.
+    error-reading-directory: <red>Ocorreu um problema ao ler o diretório de tiles.
+    empty-directory: <red>Não há tiles para unir.
+    starting: |-
+      <green>Iniciando união de <count> tiles...
+      <green><italic>(min: <min-x>,<min-z> max: <max-x>,<max-z> tamanho: <size-x>,<size-z>)
+    finished: |-
+      <green>Tiles unidos com sucesso: <count>!
+      <green>Você pode encontrá-los em <grey>/tiles/<world>/stitched/<filename>
+  version:
+    description: Obter informações de versão
+    please-wait: <italic>Verificando a versão, aguarde...
+    still-checking: <italic>Ainda verificando...
+    error:
+      not-array: '<red>Erro: resposta não é um array'
+      corrupt-json: '<red>Erro: resposta está corrompida em formato JSON'
+      unknown-version: '<red>Erro: versão desconhecida na resposta'
+      unable-to-determine: '<red>Erro: não foi possível determinar a compilação mais recente'
+    success: Pl3xMap v3 <version> (<italic><platform></italic>) git-<commit>
+    snapshot: <yellow><italic>Você está executando uma versão snapshot
+    latest-build-is: <yellow><italic>A última compilação é <build>
+    running-latest-build: <green><italic>Você está executando a compilação mais recente.
+    builds-behind: <yellow><italic>Você está <number> compilações atrás.
+    download: '<yellow><italic>Baixe a nova compilação em: <gold><link>'
+    time-traveler: <yellow><italic>Você é um viajante do tempo?
+httpd:
+  started:
+    success: <green>Servidor web interno em execução em <yellow><bind></yellow>:<yellow><port></yellow>
+    error: <red>O servidor web interno não pôde ser iniciado
+  stopped:
+    success: <green>Servidor web interno parado
+    error: <red>Ocorreu um erro com o servidor web interno
+  disabled: <green>O servidor web interno está desativado
+progress:
+  eta:
+    unknown: Desconhecido
+error:
+  must-specify-player: <red>Você deve especificar o jogador
+  no-such-player: <red>Nenhum jogador chamado <grey><player>
+  must-specify-renderer: <red>Você deve especificar o renderizador
+  no-such-renderer: <red>Nenhum renderizador chamado <grey><renderer>
+  must-specify-world: <red>Você deve especificar o mundo
+  no-such-world: <red>Nenhum mundo chamado <grey><world>
+  world-disabled: <red>O Pl3xMap está desativado para o mundo <grey><world>
+  not-valid-zoom-level: <red>Nível de zoom inválido
+  point-invalid-format: '''<point>'' não é uma localização válida. O formato necessário é ''<x> <z>'''
+ui:
+  layer:
+    players: Jogadores
+    spawn: Ponto de Geração
+    worldborder: Limite do Mundo
+  title: Pl3xMap
+  block-and-biome-lang-file: pt_br.json
+  blockinfo:
+    label: Informações do Bloco
+    value: <block><br /><biome>
+  coords:
+    label: Coordenadas
+    value: <x>, <y>, <z>
+  link:
+    label: Link Compartilhável
+    value: ''
+  markers:
+    label: Marcadores
+    value: Nenhum marcador foi configurado
+  players:
+    label: Jogadores (<online>/<max>)
+    value: Nenhum jogador está online no momento
+  worlds:
+    label: Mundos
+    value: Nenhum mundo foi configurado
+  layers:
+    label: Camadas
+    value: Nenhuma camada foi configurada

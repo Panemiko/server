@@ -2,7 +2,7 @@ settings:
   # Extra logger/console output. (can be spammy)
   debug-mode: false
   # The language file to use from the locale folder.
-  language-file: lang-en.yml
+  language-file: lang-pt.yml
   # Set the web address players use to connect to your map. This
   # is only used for the client mod to know where to connect.
   web-address: http://localhost:8080

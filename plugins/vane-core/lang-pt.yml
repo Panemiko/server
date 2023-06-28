@@ -1,0 +1,93 @@
+version: 4
+
+resource_pack_lang_code: 'pt_br'
+
+command_not_a_player: "§cErro:§6 este comando deve ser executado por um jogador!"
+command_permission_denied: "§cErro:§6 permissão negada!"
+
+invalid_time_format: "§cErro:§6 tempo inválido: %1$s"
+
+break_loot_block_prevented: "§6Este bloco possui uma tabela de saque e será automaticamente recarregado após algum tempo. Se você realmente deseja destruir este bloco, aguarde 5 segundos e quebre-o novamente."
+
+command_customitem:
+  usage: "%1$s §adarp §7<§bitem§7>"
+  description: "Dá um item personalizado específico ao jogador."
+  help: "§adarp §7<§bitem§7>:§r Dá um item personalizado específico ao jogador."
+
+command_enchant:
+  level_too_low: "§cErro:§6 nível %1$s§6 é muito baixo, deve ser pelo menos %2$s"
+  level_too_high: "§cErro:§6 nível %1$s§6 é muito alto, deve ser no máximo %2$s"
+  invalid_enchantment: "§cErro: %1$s§6 não pode ser aplicado a %2$s"
+  usage: "%1$s §benchant §7[§bnível§7]"
+  description: "Encanta o item em sua mão."
+  help: "Encanta o item em sua mão."
+
+command_vane:
+  reload_success: "%1$s§7: §arecarregamento bem-sucedido"
+  reload_fail: "%1$s§7: §cfalha ao recarregar"
+  resource_pack_generate_success: "§aRecurso pack gerado com sucesso: %1$s"
+  resource_pack_generate_fail: "§cOcorreu um erro ao gerar o recurso pack"
+  usage: "%1$s §7<§arecarregar§7|§agerar_resource_pack§7>"
+  description: "Gerencia os plugins do Vane."
+  help: "§arecarregar §7[§bmodule§7]:§r Recarrega todos ou o módulo Vane especificado.\n\
+    §agerar_resource_pack§7:§r gera o recurso pack do Vane."
+
+resource_pack:
+  declined: "Você precisa aceitar o resource pack para jogar neste servidor.\n\
+    Ele é necessário para localização e texturas. Caso você tenha recusado por acidente,\n\
+    você pode alterar isso editando a entrada deste servidor na sua lista de servidores."
+  download_failed: "§cSeu download do resource pack parece ter falhado.§r\n\
+    §7(Você foi desconectado para evitar erros de exibição)\n\
+    \n\
+    §dTente novamente."
+
+menus:
+  head_selector:
+    title: "%1$s §8§lCabeças"
+    filter_title: "§8§lFiltrar Biblioteca de Cabeças"
+    select_head:
+      name: "%1$s"
+      lore:
+        - ""
+        - "§7Categoria: %2$s"
+        - "§7Tags: %3$s"
+
+  item_selector:
+    accept:
+      name: "§a§lAceitar"
+      lore: ["§bEscolha§7 o item atualmente selecionado."]
+
+    cancel:
+      name: "§c§lCancelar"
+      lore: ["§6Cancelar§7 seleção de item."]
+
+    selected:
+      name: "§d§lItem Selecionado"
+      lore:
+        - ""
+        - "Clique em qualquer item no seu inventário para selecioná-lo."
+        - ""
+        - "§bClique esquerdo§7 para redefinir as alterações."
+        - "§bClique direito§7 para limpar (se permitido)."
+
+  generic_selector:
+    page:
+      name: "§bPágina %1$s"
+      lore: []
+
+    current_page:
+      name: "§aPágina Atual %1$s §7/ %2$s"
+      lore:
+        - ""
+        - "§b#Itens Filtrados: %3$s"
+
+    filter:
+      name: "§d§lFiltro"
+      lore:
+        - ""
+        - "§bClique esquerdo§7 para abrir o menu de filtro."
+        - "§bClique direito§7 para redefinir o filtro."
+
+    cancel:
+      name: "§c§lCancelar"
+      lore: ["§6Abortar§7 seleção."]

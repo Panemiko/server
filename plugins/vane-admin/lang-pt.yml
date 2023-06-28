@@ -1,0 +1,49 @@
+version: 2
+
+resource_pack_lang_code: 'pt_br'
+
+chat_message_formatter:
+  player_chat_format: "%1$s§7: %2$s"
+  player_join: "%1$s§e entrou no servidor"
+  player_kick: "%1$s§e foi expulso do servidor"
+  player_quit: "%1$s§e saiu do servidor"
+
+autostop:
+  aborted: "§dAutostop cancelado"
+  scheduled: "§dAutostop agendado em %1$s"
+  status: "§7Autostop em %1$s"
+  status_not_scheduled: "§dAutostop não agendado"
+  shutdown: "§dAutostop iniciado!"
+
+  command_autostop:
+    usage: "%1$s §7<§aabortar§7|§aagendar§7|§astatus§7>"
+    description: "Gerencia o autostop."
+    help: "§aabortar§7:§r Cancela a tarefa de autostop agendada.\n\
+      §aagendar §7[§batraso§7]:§r Agenda a tarefa de autostop imediatamente, independentemente do número de jogadores. Aceita um atraso para substituir o valor configurado.\n\
+      §astatus§7:§r Mostra o status atual do autostop."
+
+hazard_protection:
+  wither_spawn_prohibited: "§7O Wither não pode ser invocado neste mundo!"
+
+command_gamemode:
+  set: "§7Modo de jogo de %1$s§7 definido como %2$s"
+  usage: "%1$s §bmodo §7[§bjogador§7]"
+  description: "§bmodo §7[§bjogador§7]"
+  help: "Define o modo de jogo de um jogador."
+
+command_slimechunk:
+  slime_chunk_yes: "§aEste é um chunk de slime."
+  slime_chunk_no: "§cEste não é um chunk de slime."
+  usage: "%1$s"
+  description: "Verifica se o chunk atual é um chunk de slime."
+  help: "Verifica se o chunk atual é um chunk de slime."
+
+command_time:
+  usage: "%1$s §btempo §7[§bmundo§7]"
+  description: "Define o tempo do mundo atual ou do mundo especificado."
+  help: "Define o tempo do mundo atual ou do mundo especificado."
+
+command_weather:
+  usage: "%1$s §bclima §7[§bmundo§7]"
+  description: "Define o clima do mundo atual ou do mundo especificado."
+  help: "Define o clima do mundo atual ou do mundo especificado."

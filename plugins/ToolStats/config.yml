@@ -95,8 +95,8 @@ messages:
   # Display this message if the player shift click trades/crafts items. It's not really easy to get every single item
   # that is crafted. The tag will only be added to the first item. If you don't want this message, simply replace them both with ""
   shift-click-warning:
-    crafting: "&cCrafting items via shift clicking does not fully apply tags to each item. This is a limitation with the Bukkit API."
-    trading: "&cTrading items via shift clicking does not fully apply tags to each item. This is a limitation with the Bukkit API."
+    crafting: "&cA criação de itens através do clique com a tecla Shift não aplica completamente as tags a cada item. Isso é uma limitação da API do Bukkit."
+    trading: "&cA negociação de itens através do clique com a tecla Shift não aplica completamente as tags a cada item. Isso é uma limitação da API do Bukkit."
 
 # Change the default formatting for dates.
 # See: https://www.digitalocean.com/community/tutorials/java-simpledateformat-java-date-format

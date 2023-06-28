@@ -1,15 +1,15 @@
 Messages:
-  Reloaded: '&eImageFrame has been reloaded!'
-  ImageMapCreated: '&aImagem criada'
-  ImageMapRefreshed: '&aImageMap has been refreshed!'
-  ImageMapDeleted: '&eImagem removida'
-  ImageMapRenamed: '&aImagem renomeada'
-  SetCreator: '&aCriador da imagem {ImageID} definida para {CreatorName} ({CreatorUUID})'
-  InvalidOverlayMap: '&cSobreposição somente funciona com mapas Vanilla sem cópias'
-  UnableToLoadMap: '&cNão foi possível carregar a imagem'
-  UnknownError: '&cUm erro desconhecido ocorreu.'
-  ImageOverMaxFileSize: '&cA imagem excede o tamanho máximo da imagem ({Size} bytes)'
-  NotAnImageMap: '&cIsso não é uma imagem'
+  Reloaded: '&eImageFrame foi recarregado!'
+  ImageMapCreated: '&aMapa de imagem criado'
+  ImageMapRefreshed: '&aImageMap foi atualizado!'
+  ImageMapDeleted: '&eMapa de imagem removido'
+  ImageMapRenamed: '&aMapa de imagem renomeado'
+  SetCreator: '&aCriador do mapa de imagem {ImageID} definido como {CreatorName} ({CreatorUUID})'
+  InvalidOverlayMap: '&cSobreposição só funciona com mapas Vanilla sem cópias'
+  UnableToLoadMap: '&cNão foi possível carregar o mapa de imagem'
+  UnknownError: '&cOcorreu um erro desconhecido.'
+  ImageOverMaxFileSize: '&cA imagem excede o tamanho máximo permitido ({Size} bytes)'
+  NotAnImageMap: '&cIsso não é um mapa de imagem'
   URLImageMapInfo:
     - '&bID: {ImageID}'
     - '&aNome: {Name}'
@@ -20,47 +20,47 @@ Messages:
     - '&bMarcadores: {Markers}'
     - '&eURL: {URL}'
   NoPermission: '&cVocê não tem permissão para fazer isso'
-  NoConsole: '&cThis command can only be ran by players!'
+  NoConsole: '&cEste comando só pode ser executado por jogadores!'
   PlayerNotFound: '&cJogador não encontrado'
-  InvalidUsage: '&cUsagem inválida'
-  NotEnoughMaps: '&cVocê não tem os mapas necessários ({Amount})'
+  InvalidUsage: '&cUso inválido'
+  NotEnoughMaps: '&cVocê não possui mapas suficientes ({Amount})'
   Oversize: '&cMuito grande, tamanho máximo: {MaxSize}'
-  URLRestricted: '&cEsse URL já foi registrado e não pode ser usado'
-  PlayerCreationLimitReached: '&cVocê só pode criar <Limit> imagens de uma vez. Remova alguns para continuar'
-  DuplicateMapName: '&cVocê já criou uma imagem com esse nome'
+  URLRestricted: '&cEssa URL já foi registrada e não pode ser usada'
+  PlayerCreationLimitReached: '&cVocê só pode criar <Limit> mapas de imagem de uma vez. Remova alguns para continuar'
+  DuplicateMapName: '&cVocê já criou um mapa de imagem com esse nome'
   MapLookup: '&bLista de mapas {CreatorName} ({CreatorUUID}):'
   ItemFrameOccupied: '&cFalha ao realizar a operação'
-  NotEnoughSpace: '&cSem espaço suficiente'
+  NotEnoughSpace: '&cEspaço insuficiente'
   AccessPermission:
-    Updated: '&aPermissão atualizada {PlayerName}, agora ele tem a permissão {Permission}.'
+    Updated: '&aPermissão atualizada para {PlayerName}, agora ele possui permissão {Permission}.'
     Types:
-      NONE: Nenhum
-      GET: Pegar
+      NONE: Nenhuma
+      GET: Obter
       MARKER: Marcar
       EDIT: Editar
       EDIT_CLONE: Editar clone
       ALL: Todas
   Selection:
-    Begin: '&bClique direito em um item frame para selecionar o canto 1 e 2'
+    Begin: '&bClique com o botão direito em um item frame para selecionar o canto 1 e 2'
     Clear: '&eSaindo do modo de seleção'
-    Corner1: '&aSelecionado canto 1'
-    Corner2: '&aSelecionado canto 2'
+    Corner1: '&aCanto 1 selecionado'
+    Corner2: '&aCanto 2 selecionado'
     Invalid: '&cSeleção inválida'
-    Oversize: '&cSeleção muito grande! Tamanho máximo é {MaxSize}'
-    Success: '&aSelecionado {Width}x{Height} items frames'
+    Oversize: '&cSeleção muito grande! O tamanho máximo é {MaxSize}'
+    Success: '&aSelecionados {Width}x{Height} item frames'
     NoSelection: '&cVocê não tem uma seleção válida.'
-    IncorrectSize: '&cO tamanho da sua seleção não encaixa: {Width} x {Height}'
+    IncorrectSize: '&cO tamanho da seleção não corresponde: {Width} x {Height}'
   Markers:
-    AddBegin: '&aClique direito em um item frame contendo o mapa "{Name}" para inserir um marcador ("/imageframe marker cancel" para cancelar)'
-    AddConfirm: '&aMarcador inserido'
+    AddBegin: '&aClique com o botão direito em um item frame contendo o mapa "{Name}" para adicionar um marcador ("/imageframe marker cancel" para cancelar)'
+    AddConfirm: '&aMarcador adicionado'
     Remove: '&eMarcador removido'
     Clear: '&eMarcador limpo'
     Cancel: '&eMarcador cancelado!'
-    DuplicateName: '&cJá tem um marcador com esse nome!'
-    NotAMarker: '&cMarcador não válido'
-    NotRenderOnFrameWarning: '&eAviso: Esse tipo de marcador não renderiza em items frames'
-    LimitReached: '&cYou can only create <Limit> markers on one map!'
-  # Date format used where a time based variable is displayed
+    DuplicateName: '&cJá existe um marcador com esse nome!'
+    NotAMarker: '&cMarcador inválido'
+    NotRenderOnFrameWarning: '&eAviso: Esse tipo de marcador não é renderizado em item frames'
+    LimitReached: '&cVocê só pode criar <Limit> marcadores em um mapa!'
+  # Formato de data usado quando uma variável baseada em tempo é exibida
   DateFormat: dd/MM/yyyy HH:mm:ss zzz
 
 Settings:
