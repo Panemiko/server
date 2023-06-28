@@ -179,11 +179,11 @@ resource_pack:
     # to the language files of vane. For more information on this, see the wiki
     # (https://github.com/oddlama/vane/wiki/Creating-a-Translation).
     # Default: false
-    enabled: false
+    enabled: true
 
     # Resource pack SHA-1 sum. Required to verify resource pack integrity.
     # Default: ""
-    sha1: ""
+    sha1: "CFC71E1308FF7210C3CF5A5FA5602439C4468995"
 
     # URL to an resource pack. Will request players to use the specified resource
     # pack. [as of 1.16.2] Beware that the minecraft client currently has issues
@@ -193,7 +193,7 @@ resource_pack:
     # http is not a security issue, as the file will be verified via its sha1 sum
     # by the client.
     # Default: "https://your-server.tld/path/to/pack.zip"
-    url: "https://your-server.tld/path/to/pack.zip"
+    url: "https://surredstone.fun/resourcepack/1.0/SurredTexture.zip"
 
   # Kick players if they deny to use the specified resource pack (if set).
   # Individual players can be exempt from this rule by giving them the permission
