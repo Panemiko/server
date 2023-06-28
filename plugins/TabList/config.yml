@@ -12,7 +12,6 @@ fake-players:
 
 # If enabled, the gray color will not appear to other players when the player's game mode is spectator.
 # The gray color will only show for the spectator player.
-# Requires ProtocolLib!
 remove-gray-color-from-tab-in-spectator: false
 
 # true - does not count vanished players in %online-players% placeholder.
@@ -30,10 +29,8 @@ count-vanished-staffs: true
 hide-player-from-tab-when-afk: false
 
 # Hide all players from the player list?
-# This removes all players from the player list, but the player that has the
-# group set is retained as it is not changed during removal, so your group
-# will be restored if this option is disabled.
-# Requires ProtocolLib to fix view distance issue! (https://github.com/montlikadani/TabList/issues/147)
+# This removes all players from the player list,
+# resulting to only display the tablist with header and footer without players.
 hide-players-from-tablist: false
 
 # Different player list in different world.
@@ -164,6 +161,12 @@ change-prefix-suffix-in-tablist:
   # false - applies the group that has the higher priority in the permission plugin
   prefer-primary-vault-group: false
 
+  # Follow the name tag visibility for players to show the name tag above player or not,
+  # depending if a scoreboard team with visibility 'hidden' is exist.
+  # true - Follows the name tag visibility and hides if there is a scoreboard team created with visibility 'hidden'
+  # false - Always shows the name tag above player
+  followNameTagVisibility: false
+
 # Tablist objective types
 # Shows your current health (with life indicator), your current ping or any NUMBER placeholder
 # after the player's name (before the ping indicator).
@@ -176,20 +179,14 @@ tablist-object-type:
   # custom - custom placeholder
   type: ping
 
-  # Interval for objects refreshing in seconds.
+  # How often should it refresh the values in seconds?
   refresh-interval: 3
 
   # In these worlds the objects will not be displayed
   disabled-worlds:
   - testingWorld
-
-  # Objective settings
   object-settings:
-
-    # The player's health - displayed after the player's name.
     health:
-
-      # For these players the health will not be displayed
       restricted-players:
       - exampleplayer
       - players
@@ -207,3 +204,14 @@ download-updates: false
 
 # Log plugin messages to console?
 logconsole: true
+
+# This option monitors server performance. If the server's TPS is less than the set value,
+# TabList will cancels all currently running schedulers to improve server performance.
+# TabList will not restart these schedulers (ie animations, group updates, etc.),
+# so you have to do it manually, by reconnecting to the server or by reloading the plugin.
+# At values below 8-5, TabList is almost unable to stop its own running processes,
+# as the server is already under a very heavy load.
+# The values should be between 5-18
+# If the value is below 5 or above 18, the default value will be 16.0
+# To disable this feature set to -1
+tps-performance-observation-value: -1.0

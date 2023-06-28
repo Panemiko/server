@@ -85,3 +85,6 @@
 
 # XCatch
 /plugins/XCatch/data.json.gz
+
+# WhitelistPlayers
+/plugins/WhitelistPlayers/config.yml

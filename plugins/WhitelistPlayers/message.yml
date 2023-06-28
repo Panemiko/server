@@ -1,0 +1,25 @@
+#
+# Message setup showing in-game.
+#
+kickMessage: "&cYou are not whitelisted on this server!"
+permission: "&4» &cYou have no permission to use this command!"
+reload: "&6» &eReloaded the whitelist!"
+commandsList:
+  - "&8&m----------------------------------------------"
+  - "&6/wl on &8- &eEnables the whitelist"
+  - "&6/wl off &8- &eDisables the whitelist"
+  - "&6/wl add <Player> &8- &eAdd a player to the whitelist"
+  - "&6/wl remove <Player> &8- &eRemove a player from the whitelist"
+  - "&6/wl list &8- &eList of whitelisted players"
+  - "&6/wl reload &8- &eReload configuration"
+  - "&8&m----------------------------------------------"
+list: "&6Whitelisted players &7(&6%amount&7): &e%list"
+add: "&2» &aAdded &7%player &ato the whitelist!"
+arleadyAdded: "&6» &7%player &eis already added to the whitelist!"
+remove: "&4» &cRemoved &7%player &cfrom the whitelist!"
+unknownPlayer: "&6» &ePlayer &7%player &eis not on whitelist!"
+turnOff: "&4» &cTurned off the whitelist!"
+turnOn: "&2» &aTurned on the whitelist!"
+arleadyOn: "&6» &eThe whitelist is arleady enabled!"
+arleadyOff: "&6» &eThe whitelist is arleady disabled!"
+incorrectUse: "&4» &cIncorrect use!"
