@@ -166,7 +166,7 @@ player_heads_in_menus: true
 resource_pack:
   # Enable resource pack distribution.
   # Default: true
-  enabled: true
+  enabled: false
 
   custom_resource_pack:
     # If this is not enabled, vane will automatically distribute the official vane
