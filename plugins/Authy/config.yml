@@ -51,4 +51,4 @@ database:
     user: root
     password: root
     database: authy
-lang: en_us
+lang: pt_br
