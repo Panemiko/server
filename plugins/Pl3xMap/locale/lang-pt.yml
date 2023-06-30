@@ -6,7 +6,8 @@ command:
     click-for-help: Clique para obter ajuda
     click-to-confirm: Clique para confirmar
     argument:
-      optional-player: Padrão é o jogador executando se não for especificado (o console deve especificar um jogador)
+      optional-player: Padrão é o jogador executando se não for especificado (o console
+        deve especificar um jogador)
       optional-center: Padrão é (<white>0<gray>,</gray> 0</white>) se não for especificado
       optional-zoom: Nível de zoom do mapa
       required-renderer: O Renderer é obrigatório
@@ -17,7 +18,8 @@ command:
     success: <red>Você não tem nenhuma confirmação pendente
   fullrender:
     description: Renderizar completamente um mundo
-    starting: <green>Iniciando renderização completa. Verifique </grey>/map status</grey> para mais informações
+    starting: <green>Iniciando renderização completa. Verifique </grey>/map status</grey>
+      para mais informações
   help:
     description: Obter ajuda para os comandos do Pl3xmap
     argument:
@@ -32,7 +34,8 @@ command:
     unpaused: <green>Os renderizadores estão despausados agora
   radiusrender:
     description: Renderizar uma seção de um mundo
-    starting: <green>Iniciando renderização por raio. Verifique </grey>/map status</grey> para mais informações
+    starting: <green>Iniciando renderização por raio. Verifique </grey>/map status</grey>
+      para mais informações
   reload:
     description: Recarrega o plugin
     success: <green>Pl3xMap <grey>v<version></grey> recarregado
@@ -66,7 +69,8 @@ command:
       not-array: '<red>Erro: resposta não é um array'
       corrupt-json: '<red>Erro: resposta está corrompida em formato JSON'
       unknown-version: '<red>Erro: versão desconhecida na resposta'
-      unable-to-determine: '<red>Erro: não foi possível determinar a compilação mais recente'
+      unable-to-determine: '<red>Erro: não foi possível determinar a compilação mais
+        recente'
     success: Pl3xMap v3 <version> (<italic><platform></italic>) git-<commit>
     snapshot: <yellow><italic>Você está executando uma versão snapshot
     latest-build-is: <yellow><italic>A última compilação é <build>
@@ -74,6 +78,13 @@ command:
     builds-behind: <yellow><italic>Você está <number> compilações atrás.
     download: '<yellow><italic>Baixe a nova compilação em: <gold><link>'
     time-traveler: <yellow><italic>Você é um viajante do tempo?
+  argument:
+    optional-player: Defaults to the executing player if unspecified (console must
+      specify a player)
+    optional-center: Defaults to (<white>0<gray>,</gray> 0</white>) if unspecified
+    optional-zoom: Map zoom level
+    required-renderer: Renderer is required
+    required-world: World is required
 httpd:
   started:
     success: <green>Servidor web interno em execução em <yellow><bind></yellow>:<yellow><port></yellow>
@@ -94,7 +105,8 @@ error:
   no-such-world: <red>Nenhum mundo chamado <grey><world>
   world-disabled: <red>O Pl3xMap está desativado para o mundo <grey><world>
   not-valid-zoom-level: <red>Nível de zoom inválido
-  point-invalid-format: '''<point>'' não é uma localização válida. O formato necessário é ''<x> <z>'''
+  point-invalid-format: '''<point>'' não é uma localização válida. O formato necessário
+    é ''<x> <z>'''
 ui:
   layer:
     players: Jogadores

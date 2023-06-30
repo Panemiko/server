@@ -60,7 +60,7 @@ Messages:
     NotAMarker: '&cMarcador inválido'
     NotRenderOnFrameWarning: '&eAviso: Esse tipo de marcador não é renderizado em item frames'
     LimitReached: '&cVocê só pode criar <Limit> marcadores em um mapa!'
-  # Formato de data usado quando uma variável baseada em tempo é exibida
+  # Date format used where a time based variable is displayed
   DateFormat: dd/MM/yyyy HH:mm:ss zzz
 
 Settings:

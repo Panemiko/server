@@ -42,9 +42,6 @@
 # eBackup
 /backups
 
-# EZColors
-/plugins/EZColors/storage
-
 # HiddenArmor
 /plugins/HiddenArmor/enabled-players.yml
 
@@ -88,3 +85,8 @@
 
 # WhitelistPlayers
 /plugins/WhitelistPlayers/config.yml
+
+# Essentials
+/plugins/Essentials/warps
+/plugins/Essentials/usermap.bin
+/plugins/Essentials/uuids.bin
