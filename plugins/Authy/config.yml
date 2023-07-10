@@ -1,3 +1,4 @@
+requirePin: false
 nameValidation: true
 timeout: 60
 passwordValidation:

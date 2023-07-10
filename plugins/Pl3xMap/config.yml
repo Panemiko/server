@@ -18,7 +18,7 @@ settings:
     # Note: Be sure this is false when upgrading.
     read-only: false
     # The image format for tile images.
-    # Built in types: bmp, gif, jpeg, png
+    # Built in types: bmp, gif, jpg, jpeg, png
     tile-format: png
     # The quality for image tiles (0.0 - 1.0)
     # 0.0 is low quality, high compression, small file size
@@ -53,6 +53,10 @@ settings:
     # The port the built-in web server listens to.
     # Make sure the port is allocated if using Pterodactyl.
     port: 8080
+    # Allows the built-in web server to follow symlinks.
+    # It is generally advised against enabling this,
+    # for security reasons. But you do you, boo boo.
+    follow-symlinks: false
   performance:
     # The number of process-threads to use for loading and scanning chunks.
     # Value of -1 will use 50% of the available cpu-threads. (recommended)
@@ -95,12 +99,16 @@ world-settings:
       # Type of heightmap to render.
       # NONE has no heightmap drawn.
       # EVEN_ODD makes every other Y layer darker, like Dynmap.
+      # HIGH_CONTRAST same as MODERN, but darker.
       # LOW_CONTRAST same as MODERN, but lighter.
       # MODERN is a clearer, more detailed view.
       # OLD_SCHOOL is the old type from v1.
+      # VANILLA matches the in-game vanilla maps.
+      # EVEN_ODD_HIGH_CONTRAST mix of EVEN_ODD and HIGH_CONTRAST.
       # EVEN_ODD_LOW_CONTRAST mix of EVEN_ODD and LOW_CONTRAST.
       # EVEN_ODD_MODERN mix of EVEN_ODD and MODERN.
       # EVEN_ODD_OLD_SCHOOL mix of EVEN_ODD and OLD_SCHOOL.
+      # EVEN_ODD_VANILLA mix of EVEN_ODD and VANILLA.
       heightmap-type: MODERN
       # Visible areas of the world.
       visible-areas:

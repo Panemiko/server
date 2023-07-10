@@ -109,7 +109,7 @@
 # giving players the angelchest.group.<groupname> permission. See
 # groups.example.yml for more information.
 # Default is 600 seconds = 10 minutes
-angelchest-duration: 3600 # 1 hour
+angelchest-duration: 3600
 
 # If players have their chests protected (angelchest.protect permission),
 # you can define a duration in seconds to automatically unlock the chests.
@@ -284,17 +284,17 @@ prohibit-auto-equip: false
 # as that would destroy those blocks. You can blacklist them here so AngelChest searches
 # for a spot nearby.
 dont-spawn-on:
-  - FARMLAND
-  - GRASS_PATH
-  - DIRT_PATH
-  - LAVA
+- FARMLAND
+- GRASS_PATH
+- DIRT_PATH
+- LAVA
 
 # You can specify inside which existing blocks the AngelChest may spawn. If the block where
 # the player died is not in this list, AngelChest searches for a spot nearby.
 only-spawn-in:
-  - AIR
-  - WATER
-  - SNOW
+- AIR
+- WATER
+- SNOW
 
 # When the block where the player died doesn't match "dont-spawn-on" and "only-spawn-in"
 # we will search for another block inside max-radius. Default is 10 blocks.
@@ -378,7 +378,7 @@ dispose-death-maps: false
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/map/MapCursor.Type.html
 death-map-marker: RED_X
 
-death-map-name: "AngelChest"
+death-map-name: AngelChest
 death-map-lore: "X: {x}\nY: {y}\nZ: {z}"
 
 #########################
@@ -862,45 +862,45 @@ prefix: "&b[&DeadChest&b] &r"
 
 # Commands that can be used instead of /acgui
 command-aliases-acgui:
-  - angelchestgui
+- angelchestgui
 
 # Commands that can be used instead of /aclist
 command-aliases-aclist:
-  - acinfo
-  - ac
-  - angelchest
-  - angelchestinfo
-  - angelchestlist
+- acinfo
+- ac
+- angelchest
+- angelchestinfo
+- angelchestlist
 
 # Commands that can be used instead of /acfetch
 command-aliases-acfetch:
-  - acretrieve
-  - angelchestfetch
-  - angelchestretrieve
+- acretrieve
+- angelchestfetch
+- angelchestretrieve
 
 # Commands that can be used instead of /actp
 command-aliases-actp:
-  - acteleport
-  - angelchesttp
-  - angelchestteleport
+- acteleport
+- angelchesttp
+- angelchestteleport
 
 # Commands that can be used instead of /acunlock
 command-aliases-acunlock:
-  - angelchestunlock
-  - unlockchest
-  - unlock
+- angelchestunlock
+- unlockchest
+- unlock
 
 # Commands than can be used instead of /actoggle.
 command-aliases-actoggle:
-  - angelchesttoggle
+- angelchesttoggle
 
 # Commands that can be used instead of /acreload
 command-aliases-acreload:
-  - angelchestreload
+- angelchestreload
 
 # Commands that can be used instead of /acdebug
 command-aliases-acdebug:
-  - acd
+- acd
 
 #########################
 #####     Misc      #####
@@ -939,53 +939,53 @@ chest-filename: "{player}_{world}_{x}_{y}_{z}.yml"
 #####   Messages   ######
 #########################
 
-# message-all-your-angelchests-were-already-unlocked: "&eAll your AngelChests were already unlocked."
-# message-angelchest-created: "&aAn Angel collected your stuff and put it into a chest located at the place of your death."
-# message-angelchest-disappeared: "&cYou were too slow... Your AngelChest has disappeared and dropped its contents."
-# message-error-players-only: "&cError: This command can only be used by players."
-# message-inventory-was-empty: "&eAn Angel searched for your stuff but could not find anything."
-# message-not-allowed-to-break-other-angelchests: "&cYou are not allowed to break this AngelChest."
-# message-not-allowed-to-open-other-angelchests: "&cYou are not allowed to open this AngelChest."
-# message-unlocked-more-angelchests: "&aYou have unlocked %d AngelChests."
-# message-unlocked-one-angelchest: "&aYou have unlocked your AngelChest."
-# message-you-dont-have-any-angelchests: "&eYou don't have any AngelChests."
-# message-you-got-part-of-your-inventory-back: "&eYou got a part of your inventory back, but some items are still in the AngelChest."
-# message-you-got-your-inventory-back: "&aYou got your inventory back!"
-# message-angelchest-location: "&eLocations of your AngelChests:"
-# message-not-enough-money: "&cYou don't have enough money."
-# message-not-enough-money2: "&cAn Angel tried to collect your stuff but you didn't have enough money."
-# message-please-select-chest: "&7Please specify which AngelChest you would like to select."
-# message-already-unlocked: "&cThis AngelChest is already unlocked."
-# message-too-many-angelchests: "&cYou had more AngelChests than your Angel could handle... Your oldest AngelChest has exploded."
-# message-no-angelchest-in-pvp: "&cAn Angel tried to collect your stuff but was put to flight by the presence of your killer."
-# message-angelchest-retrieved: "&aAngelChest retrieved!"
-# message-confirm: "&6You are about to spend {price}{currency}. Click this message to continue."
-# message-paid-open: "&8You spent {price}{currency} to open an AngelChest."
-# message-unlocked-automatically: "&8Your AngelChest has been unlocked automatically."
-# message-angelchest-opened: "&6{player} has opened your AngelChest."
-# message-angelchest-emptied: "&c{player} has emptied your AngelChest."
-# message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
-# message-no-permission: "&cYou do not have the permission to use this command."
-# message-invulnerable: "&a&lYou are invulnerable for {time}."
-# message-vulnerable: "&c&lYou are no longer invulnerable."
-# message-tp-across-worlds-not-allowed: "&cYou cannot teleport to your AngelChest across worlds."
-# message-fetch-across-worlds-not-allowed: "&cYou cannot fetch your AngelChest across worlds."
-# message-max-tp-distance: "&cYou cannot teleport to AngelChests more than {distance} blocks away."
-# message-max-fetch-distance: "&cYou cannot fetch AngelChests more than {distance} blocks away."
-# message-angelchest-disabled: "&cYou are no longer protected by Angels."
-# message-angelchest-enabled: "&aYou are now protected by Angels."
-# message-angelchest-fetched: "&aAngelChest fetched succesfully."
-# message-angelchest-teleported: "&aSuccessfully teleported you to your AngelChest."
-# message-min-distance: "&cYou already are nearby your AngelChest."
-# message-buried-in-graveyard: "&aAn Angel collected your stuff and buried it at &6{graveyard}."
-# message-cant-fetch-here: "&cYou cannot fetch your AngelChest here."
-# message-teleporting: "&aTeleporting to AngelChest..."
-# message-angelchest-disabled-others: "&c{player} is no longer protected by Angels."
-# message-angelchest-enabled-others: "&a{player} is now protected by Angels."
-# message-has-no-item: "&cYou need at least one {item}&r&c to do this."
-# message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
-# message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
-# message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+message-all-your-angelchests-were-already-unlocked: "&eTodos os seus Baús Angelicais já estavam destrancados."
+message-angelchest-created: "&aUm Anjo coletou suas coisas e as colocou em um baú no local de sua morte."
+message-angelchest-disappeared: "&cVocê foi muito lento... Seu Baú Angelical desapareceu e dropou seu conteúdo"
+message-error-players-only: "&cErro: Esse comando só pode ser usado por jogadores."
+message-inventory-was-empty: "&eUm Anjo procurou por suas coisas, mas não conseguiu encontrar algo."
+message-not-allowed-to-break-other-angelchests: "&cVocê não tem permissão para quebrar este Baú Angelical."
+message-not-allowed-to-open-other-angelchests: "&cVocê não tem permissão para abrir este Baú Angelical."
+message-unlocked-more-angelchests: "&aVocê abriu o Baú Angelical de %d."
+message-unlocked-one-angelchest: "&aVocê abriu o seu Baú Angelical."
+message-you-dont-have-any-angelchests: "&eVocê não tem nenhum Baú Angelical."
+message-you-got-part-of-your-inventory-back: "&eVocê recuperou parte do seu inventário, mas alguns itens ainda estão no Baú Angelical."
+message-you-got-your-inventory-back: "&aVocê recuperou seu inventário!"
+message-angelchest-location: "&eLocalizações dos seus Baús Angelicais:"
+message-not-enough-money: "&cVocê não tem dinheiro suficiente."
+message-not-enough-money2: "&cUm anjo tentou coletar suas coisas, mas você não tinha dinheiro suficiente."
+message-please-select-chest: "&7Por favor, especifique qual Baú Angelical você gostaria de selecionar."
+message-already-unlocked: "&cEste Baú Angelical já está destrancado."
+message-too-many-angelchests: "&cVocê tinha mais Baús Angelicais do que seu Anjo poderia suportar... Seu Baú Angelical mais antigo explodiu."
+message-no-angelchest-in-pvp: "&cUm Anjo tentou coletar suas coisas, mas foi afugentado pela presença de seu assassino."
+message-angelchest-retrieved: "&aBaú Angelical recuperado!"
+message-confirm: "&6Você está prestes a gastar {price}{currency}. Clique nesta mensagem para continuar."
+message-paid-open: "&8Você gastou {price}{currency} para abrir um Baú Angelical."
+message-unlocked-automatically: "&8Seu Baú Angelical foi desbloqueado automaticamente."
+message-angelchest-opened: "&6{player} abriu seu Baú Angelical."
+message-angelchest-emptied: "&c{player} esvaziou seu Baú Angelical."
+message-spawn-chance-unsuccessful: "&cSeu anjo esqueceu de pegar suas coisas, infelizmente!"
+message-no-permission: "&cVocê não tem permissão para usar este comando."
+message-invulnerable: "&a&lVocê está invulnerável por {time}."
+message-vulnerable: "&c&lVocê não está mais invulnerável."
+message-tp-across-worlds-not-allowed: "&cVocê não pode teleportar para o seu Baú Angelical através dos mundos."
+message-fetch-across-worlds-not-allowed: "&cVocê não pode mover seu Baú Angelical através dos mundos."
+message-max-tp-distance: "&cVocê não pode teleportar para Baús Angelicais a mais de {distance} blocos."
+message-max-fetch-distance: "&cVocê não pode trazer Baús Angelicais a mais de {distance} blocos."
+message-angelchest-disabled: "&cVocê não está mais protegido pelos Anjos"
+message-angelchest-enabled: "&aVocê agora está protegido pelos Anjos."
+message-angelchest-fetched: "&aBaú Angelical entregue com sucesso."
+message-angelchest-teleported: "&aTeleportado com sucesso para o seu Baú Angelical."
+message-min-distance: "&cVocê já está perto do seu Baú Angelical."
+message-buried-in-graveyard: "&aUm anjo recolheu suas coisas e as enterrou em &6{graveyard}."
+message-cant-fetch-here: "&cVocê não pode trazer seu Baú Angelical para cá."
+message-teleporting: "&aTeleportando para Baú Angelical..."
+message-angelchest-disabled-others: "&c{player} não está mais protegido pelos Anjos."
+message-angelchest-enabled-others: "&a{player} agora está protegido pelos Anjos."
+message-has-no-item: "&cVocê precisa de pelo menos um {item}&r&c para fazer isso."
+message-has-no-item2: "&cUm Anjo tentou coletar suas coisas, mas você não tinha nenhum {item}&r&c."
+message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 
 #########################
 ##### Translations ######
@@ -1681,53 +1681,53 @@ chest-filename: "{player}_{world}_{x}_{y}_{z}.yml"
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 
 ##### Portuguese
-message-all-your-angelchests-were-already-unlocked: "&eTodos os seus Baús Angelicais já estavam destrancados."
-message-angelchest-created: "&aUm Anjo coletou suas coisas e as colocou em um baú no local de sua morte."
-message-angelchest-disappeared: "&cVocê foi muito lento... Seu Baú Angelical desapareceu e dropou seu conteúdo"
-message-error-players-only: "&cErro: Esse comando só pode ser usado por jogadores."
-message-inventory-was-empty: "&eUm Anjo procurou por suas coisas, mas não conseguiu encontrar algo."
-message-not-allowed-to-break-other-angelchests: "&cVocê não tem permissão para quebrar este Baú Angelical."
-message-not-allowed-to-open-other-angelchests: "&cVocê não tem permissão para abrir este Baú Angelical."
-message-unlocked-more-angelchests: "&aVocê abriu o Baú Angelical de %d."
-message-unlocked-one-angelchest: "&aVocê abriu o seu Baú Angelical."
-message-you-dont-have-any-angelchests: "&eVocê não tem nenhum Baú Angelical."
-message-you-got-part-of-your-inventory-back: "&eVocê recuperou parte do seu inventário, mas alguns itens ainda estão no Baú Angelical."
-message-you-got-your-inventory-back: "&aVocê recuperou seu inventário!"
-message-angelchest-location: "&eLocalizações dos seus Baús Angelicais:"
-message-not-enough-money: "&cVocê não tem dinheiro suficiente."
-message-not-enough-money2: "&cUm anjo tentou coletar suas coisas, mas você não tinha dinheiro suficiente."
-message-please-select-chest: "&7Por favor, especifique qual Baú Angelical você gostaria de selecionar."
-message-already-unlocked: "&cEste Baú Angelical já está destrancado."
-message-too-many-angelchests: "&cVocê tinha mais Baús Angelicais do que seu Anjo poderia suportar... Seu Baú Angelical mais antigo explodiu."
-message-no-angelchest-in-pvp: "&cUm Anjo tentou coletar suas coisas, mas foi afugentado pela presença de seu assassino."
-message-angelchest-retrieved: "&aBaú Angelical recuperado!"
-message-confirm: "&6Você está prestes a gastar {price}{currency}. Clique nesta mensagem para continuar."
-message-paid-open: "&8Você gastou {price}{currency} para abrir um Baú Angelical."
-message-unlocked-automatically: "&8Seu Baú Angelical foi desbloqueado automaticamente."
-message-angelchest-opened: "&6{player} abriu seu Baú Angelical."
-message-angelchest-emptied: "&c{player} esvaziou seu Baú Angelical."
-message-spawn-chance-unsuccessful: "&cSeu anjo esqueceu de pegar suas coisas, infelizmente!"
-message-no-permission: "&cVocê não tem permissão para usar este comando."
-message-invulnerable: "&a&lVocê está invulnerável por {time}."
-message-vulnerable: "&c&lVocê não está mais invulnerável."
-message-tp-across-worlds-not-allowed: "&cVocê não pode teleportar para o seu Baú Angelical através dos mundos."
-message-fetch-across-worlds-not-allowed: "&cVocê não pode mover seu Baú Angelical através dos mundos."
-message-max-tp-distance: "&cVocê não pode teleportar para Baús Angelicais a mais de {distance} blocos."
-message-max-fetch-distance: "&cVocê não pode trazer Baús Angelicais a mais de {distance} blocos."
-message-angelchest-disabled: "&cVocê não está mais protegido pelos Anjos"
-message-angelchest-enabled: "&aVocê agora está protegido pelos Anjos."
-message-angelchest-fetched: "&aBaú Angelical entregue com sucesso."
-message-angelchest-teleported: "&aTeleportado com sucesso para o seu Baú Angelical."
-message-min-distance: "&cVocê já está perto do seu Baú Angelical."
-message-buried-in-graveyard: "&aUm anjo recolheu suas coisas e as enterrou em &6{graveyard}."
-message-cant-fetch-here: "&cVocê não pode trazer seu Baú Angelical para cá."
-message-teleporting: "&aTeleportando para Baú Angelical..."
-message-angelchest-disabled-others: "&c{player} não está mais protegido pelos Anjos."
-message-angelchest-enabled-others: "&a{player} agora está protegido pelos Anjos."
-message-has-no-item: "&cVocê precisa de pelo menos um {item}&r&c para fazer isso."
-message-has-no-item2: "&cUm Anjo tentou coletar suas coisas, mas você não tinha nenhum {item}&r&c."
-message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
-message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-all-your-angelchests-were-already-unlocked: "&eTodos os seus Baús Angelicais já estavam destrancados."
+#message-angelchest-created: "&aUm Anjo coletou suas coisas e as colocou em um baú no local de sua morte."
+#message-angelchest-disappeared: "&cVocê foi muito lento... Seu Baú Angelical desapareceu e dropou seu conteúdo"
+#message-error-players-only: "&cErro: Esse comando só pode ser usado por jogadores."
+#message-inventory-was-empty: "&eUm Anjo procurou por suas coisas, mas não conseguiu encontrar algo."
+#message-not-allowed-to-break-other-angelchests: "&cVocê não tem permissão para quebrar este Baú Angelical."
+#message-not-allowed-to-open-other-angelchests: "&cVocê não tem permissão para abrir este Baú Angelical."
+#message-unlocked-more-angelchests: "&aVocê abriu o Baú Angelical de %d."
+#message-unlocked-one-angelchest: "&aVocê abriu o seu Baú Angelical."
+#message-you-dont-have-any-angelchests: "&eVocê não tem nenhum Baú Angelical."
+#message-you-got-part-of-your-inventory-back: "&eVocê recuperou parte do seu inventário, mas alguns itens ainda estão no Baú Angelical."
+#message-you-got-your-inventory-back: "&aVocê recuperou seu inventário!"
+#message-angelchest-location: "&eLocalizações dos seus Baús Angelicais:"
+#message-not-enough-money: "&cVocê não tem dinheiro suficiente."
+#message-not-enough-money2: "&cUm anjo tentou coletar suas coisas, mas você não tinha dinheiro suficiente."
+#message-please-select-chest: "&7Por favor, especifique qual Baú Angelical você gostaria de selecionar."
+#message-already-unlocked: "&cEste Baú Angelical já está destrancado."
+#message-too-many-angelchests: "&cVocê tinha mais Baús Angelicais do que seu Anjo poderia suportar... Seu Baú Angelical mais antigo explodiu."
+#message-no-angelchest-in-pvp: "&cUm Anjo tentou coletar suas coisas, mas foi afugentado pela presença de seu assassino."
+#message-angelchest-retrieved: "&aBaú Angelical recuperado!"
+#message-confirm: "&6Você está prestes a gastar {price}{currency}. Clique nesta mensagem para continuar."
+#message-paid-open: "&8Você gastou {price}{currency} para abrir um Baú Angelical."
+#message-unlocked-automatically: "&8Seu Baú Angelical foi desbloqueado automaticamente."
+#message-angelchest-opened: "&6{player} abriu seu Baú Angelical."
+#message-angelchest-emptied: "&c{player} esvaziou seu Baú Angelical."
+#message-spawn-chance-unsuccessful: "&cSeu anjo esqueceu de pegar suas coisas, infelizmente!"
+#message-no-permission: "&cVocê não tem permissão para usar este comando."
+#message-invulnerable: "&a&lVocê está invulnerável por {time}."
+#message-vulnerable: "&c&lVocê não está mais invulnerável."
+#message-tp-across-worlds-not-allowed: "&cVocê não pode teleportar para o seu Baú Angelical através dos mundos."
+#message-fetch-across-worlds-not-allowed: "&cVocê não pode mover seu Baú Angelical através dos mundos."
+#message-max-tp-distance: "&cVocê não pode teleportar para Baús Angelicais a mais de {distance} blocos."
+#message-max-fetch-distance: "&cVocê não pode trazer Baús Angelicais a mais de {distance} blocos."
+#message-angelchest-disabled: "&cVocê não está mais protegido pelos Anjos"
+#message-angelchest-enabled: "&aVocê agora está protegido pelos Anjos."
+#message-angelchest-fetched: "&aBaú Angelical entregue com sucesso."
+#message-angelchest-teleported: "&aTeleportado com sucesso para o seu Baú Angelical."
+#message-min-distance: "&cVocê já está perto do seu Baú Angelical."
+#message-buried-in-graveyard: "&aUm anjo recolheu suas coisas e as enterrou em &6{graveyard}."
+#message-cant-fetch-here: "&cVocê não pode trazer seu Baú Angelical para cá."
+#message-teleporting: "&aTeleportando para Baú Angelical..."
+#message-angelchest-disabled-others: "&c{player} não está mais protegido pelos Anjos."
+#message-angelchest-enabled-others: "&a{player} agora está protegido pelos Anjos."
+#message-has-no-item: "&cVocê precisa de pelo menos um {item}&r&c para fazer isso."
+#message-has-no-item2: "&cUm Anjo tentou coletar suas coisas, mas você não tinha nenhum {item}&r&c."
+#message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 
 ##### Romanian (Română)
 #message-all-your-angelchests-were-already-unlocked: "Toate Angel Chest-urile tale au fost deja deblocate."
@@ -2031,5 +2031,5 @@ debug: false
 verbose: false
 
 # NEVER CHANGE THE VALUES BELOW!
-plugin-version: 9.13.0
-config-version: 202305140547
+plugin-version: 9.14.2
+config-version: 202306131614

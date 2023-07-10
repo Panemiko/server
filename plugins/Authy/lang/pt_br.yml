@@ -1,10 +1,10 @@
 # key template:
-# [onde]_[seção]_[chave]
+# [where]_[section]_[key]
 
-enabled: "&aAtivado"
-disabled: "&cDesativado"
+enabled: "&aEnabled"
+disabled: "&cDisabled"
 
-# pode ser no formato minecraft (&x) ou hex (#abc123)
+# can be in minecraft (&x) or hex (#abc123) format
 prefix_warning_value: "&l(!)"
 prefix_warning_color: "#FFDA4A"
 
@@ -26,53 +26,55 @@ prefix_unregister_color: "#FFCF8A"
 prefix_register_value: "&l(✔)"
 prefix_register_color: "#CDFF00"
 
-already_authed: "&7Você já está autenticado!"
-no_pin_warning: "&cVocê não possui um PIN definido! &7Por motivos de segurança, defina-o usando o comando &8/&fpin &7!"
+already_authed: "&7You're already authenticated!"
+no_pin_warning: "&cYou don't have a pin set! &7For security set it using the &8/&fpin &7command!"
 
-login_success: "&7Login realizado com sucesso!"
-autologin_success: "&7Login automático realizado com sucesso!"
-register_success: "&7Registro realizado com sucesso!"
-unregister_success: "&7Registro cancelado com sucesso!"
-timedout_error: "&7O tempo para autorização expirou!"
-invalid_username: "&7Nome de usuário inválido!"
+login_success: "&7Successfully logged in!"
+autologin_success: "&7Logged in automatically!"
+register_success: "&7Successfully registered!"
+unregister_success: "&7Successfully unregistered!"
+timedout_error: "&7Time for authorization has expired!"
+invalid_username: "&7Invalid username!"
 
-loginprocess_reminder_login: "&7Faça login usando &8/&flogin &8[&fsenha&8] %s"
-loginprocess_reminderlogin_haspin: "&8[&fpin&8]"
-loginprocess_reminder_register: "&7Registre-se usando &8/&fregister &8[&fsenha&8] [&frepetir senha&8]"
+loginprocess_reminder_login: "&7Login using &8/&flogin &8[&fpassword&8] %s"
+loginprocess_reminder_pin: "&8[&fpin code&8]"
+loginprocess_reminder_register: "&7Register using &8/&fregister &8[&fpassword&8] [&frepeat password&8] %s"
 
-command_register_usage: "&7Uso: &8/&fregister &8[&fsenha&8] [&frepetir senha&8]"
-command_register_notidentical: "&7A senha repetida não corresponde!"
-command_register_breaksrules: "&7Sua senha não atende aos requisitos! &cRegras&8: &fComprimento mínimo&8: &c%d&8, &fComprimento máximo&8: &c%d&8, &fCaracteres maiúsculos mínimos&8: &c%s&8, &fNúmeros mínimos&8: &c%s"
-command_register_alreadyregistered: "&7Você já está registrado!"
+command_register_usagepin: "&7Usage: &8/&fregister &8[&fpassword&8] [&frepeat password&8] [&fpin code&8]"
+command_register_usage: "&7Usage: &8/&fregister &8[&fpassword&8] [&frepeat password&8]"
+command_register_notidentical: "&7Repeated password doesn't match!"
+command_register_breaksrules: "&7Your password doesn't match the requirements! &cRules&8: &fMinimum Length&8: &c%d&8, &fMaximum Length&8: &c%d&8, &fMinimum Uppercase Characters&8: &c%s&8, &fMinimum Numbers&8: &c%s"
+command_register_alreadyregistered: "&7You're already registered!"
 
-command_login_usagepin: "&7Uso: &8/&flogin &8[&fsenha&8] [&fcódigo PIN&8]"
-command_login_usage: "&7Uso: &8/&flogin &8[&fsenha&8]"
-command_login_notregistered: "&7Você não está registrado! Use o comando &8/&fregister &7!"
-command_login_wrongpassword: "&7Senha incorreta!"
-command_login_wrongpin: "&7PIN incorreto!"
-command_login_nopinwarning: "&cVocê não possui um PIN definido! &7Por motivos de segurança, defina-o usando o comando &8/&fpin &7!"
+command_login_usagepin: "&7Usage: &8/&flogin &8[&fpassword&8] [&fpin code&8]"
+command_login_usage: "&7Usage: &8/&flogin &8[&fpassword&8]"
+command_login_notregistered: "&7You're not registered! Use the &8/&fregister &7command!"
+command_login_wrongpassword: "&7Wrong password!"
+command_login_wrongpin: "&7Wrong pin!"
+command_login_nopinwarning: "&cYou don't have a pin set! &7For security set it using the &8/&fpin &7command!"
 
-pincommand_info_bar: "&8[%s●&8] &8&m----&r &7PIN &8&m----&r &8[%s●&8]"
+pincommand_info_bar: "&8[%s●&8] &8&m----&r &7Pin &8&m----&r &8[%s●&8]"
 pincommand_info_status: "&8  - &7Status&8: %s"
 pincommand_info_split: "    &8&m----"
-pincommand_info_togglehelp: "&8  - /&fpin &7toggle &8- &7Ativa ou desativa o PIN"
-pincommand_info_sethelp: "&8  - /&fpin &7set &8[&7novo código PIN&8] - &7Define o PIN"
+pincommand_info_togglehelp: "&8  - /&fpin &7toggle &8- &7Toggles the pin"
+pincommand_info_sethelp: "&8  - /&fpin &7set &8[&7new pin code&8] - &7Sets the pin"
 
-command_pin_setpinbeforetoggle: "&7Você precisa definir um PIN primeiro! Use o comando &8/&fpin &7set &8[&7novo código PIN&8] &7!"
-command_pin_toggled: "%s &7o PIN!"
-command_pin_setusage: "&7Uso&8: /&fpin &7set &8[&7novo código PIN&8]"
-command_pin_breaksrules: "&7Seu PIN não atende aos requisitos! &cRegras&8: &fComprimento mínimo&8: &c%d&8, &fComprimento máximo&8: &c%d&8"
-command_pin_success: "&7O PIN foi definido! &7Lembre-se de ativá-lo usando o comando &8/&fpin toggle &7!"
+command_pin_setpinbeforetoggle: "&7You need to set a pin first! Use the &8/&fpin &7set &8[&7new pin code&8] &7command!"
+command_pin_toggled: "%s &7the pin!"
+command_pin_required: "&7You can't disable the pin code on this server!"
+command_pin_setusage: "&7Usage&8: /&fpin &7set &8[&7new pin code&8]"
+command_pin_breaksrules: "&7Your pin doesn't match the requirements! &cRules&8: &fMinimum Length&8: &c%d&8, &fMaximum Length&8: &c%d&8"
+command_pin_success: "&7Pin has been set! &7Remember to enable it using the &8/&fpin toggle &7command!"
 
-command_remember_success: "&7Sessão salva por &c%dh!"
+command_remember_success: "&7Session saved for &c%dh!"
 
-command_unregister_successkick: "&7Entre novamente e registre-se!"
+command_unregister_successkick: "&7Enter again and register!"
 
-duplicateprotection_notification_message: "&7Contas do mesmo endereço IP: &8(%s&8)"
+duplicateprotection_notification_message: "&7Accounts from the same IP address: &8(%s&8)"
 duplicateprotection_notification_separator: "&8, &r"
 duplicateprotection_notification_namecolor: "#FFDA4A"
-duplicateprotection_max_reached: "&7Só pode haver no máximo &c%s &7contas no mesmo endereço IP!"
+duplicateprotection_max_reached: "&7There can be only &c%s &7accounts on the same IP address!"
 
-# não editar
-# apenas atualizado quando novas chaves forem adicionadas/renomeadas ou o formato for alterado
-versão: 6
+# do not edit
+# only updated when new keys have been added/renamed or the formatting has changed
+version: 7

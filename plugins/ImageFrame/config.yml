@@ -62,6 +62,8 @@ Messages:
     LimitReached: '&cVocê só pode criar <Limit> marcadores em um mapa!'
   # Date format used where a time based variable is displayed
   DateFormat: dd/MM/yyyy HH:mm:ss zzz
+  ImageMapProcessing: '&cImageMap is being processed, please wait!'
+  ImageMapTogglePaused: '&aToggled ImageMap playback pause!'
 
 Settings:
   MapItemFormat: '&f{Name} &7({X}, {Y})'

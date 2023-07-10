@@ -33,6 +33,7 @@ database:
     password: ''
     prefix: lwc_
     ping_interval: 300
+    useSSL: false
 protections:
     denyRedstone: false
     denyHoppers: true
